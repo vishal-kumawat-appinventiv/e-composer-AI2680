@@ -1,6 +1,21 @@
+import { useEffect, useState } from "react";
 import { HERO_IMG_1, HERO_IMG_2, LOGO_IMG } from "../../../utils/mock";
 
 const HeroSection = () => {
+  const [annimation, setAnnimation] = useState({
+    1: false,
+    2: false,
+    3: false,
+  });
+
+  useEffect(() => {
+    setAnnimation((prevState) => ({ ...prevState, 1: true }));
+    setAnnimation((prevState) => ({ ...prevState, 3: true }));
+    setTimeout(() => {
+      setAnnimation((prevState) => ({ ...prevState, 2: true }));
+    }, 500);
+  }, []);
+
   return (
     <>
       <section className="p-4 w-full box-border">
@@ -34,7 +49,11 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="col2 flex flex-col justify-center gap-6 h-full w-full min-w-0 overflow-hidden">
-            <div className="relative bg-[#bde48a] flex-grow h-[35vh] lg:h-[30%] w-full rounded-xl">
+            <div
+              className={`relative bg-[#bde48a] flex-grow h-[35vh] lg:h-[30%] w-full rounded-xl transition-transform duration-700 ease-in-out ${
+                annimation[1] ? "translate-x-0" : "translate-x-full"
+              }`}
+            >
               <div className="absolute z-10 top-2 lg:top-5 right-2 lg:right-5">
                 <button className="px-3 py-2 border-black border-2 rounded-full">
                   <i className="bi bi-lightning-charge"></i>
@@ -51,7 +70,10 @@ const HeroSection = () => {
                 </button>
               </div>
             </div>
-            <div className="relative flex-grow h-[35vh] lg:h-[70%] rounded-xl overflow-hidden">
+            <div
+              className={`relative flex-grow h-[35vh] lg:h-[70%] rounded-xl overflow-hidden transition-transform duration-700 ease-in-out
+                ${annimation[2] ? "translate-y-0" : "translate-y-full"}`}
+            >
               <img
                 src={HERO_IMG_2}
                 alt="hero-img2"
