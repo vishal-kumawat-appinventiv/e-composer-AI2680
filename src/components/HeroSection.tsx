@@ -36,22 +36,36 @@ const HeroSection = () => {
           <div className="col2 flex flex-col justify-center gap-6 h-full w-full min-w-0 overflow-hidden">
             <div className="relative bg-[#bde48a] flex-grow h-[50%] lg:h-[30%] w-full rounded-xl">
               <div className="absolute z-10 top-5 right-5">
-                <button className="px-3 py-2 border-black border-2 rounded-full"><i className="bi bi-lightning-charge"></i></button>
+                <button className="px-3 py-2 border-black border-2 rounded-full">
+                  <i className="bi bi-lightning-charge"></i>
+                </button>
               </div>
-              <div className="absolute bottom-5 left-5 z-10 flex flex-col gap-2 lg:gap-4  font-bold">
+              <div className="absolute bottom-5 left-5 z-10 flex flex-col gap-2 lg:gap-4 font-bold">
                 <p className="text-black text-sm">DESIGN</p>
-                <h2 className="text-black text-2xl lg:text-3xl">Here's what's new in your favourite stores & online this week...</h2>
+                <h2 className="text-black text-2xl lg:text-3xl">
+                  Here's what's new in your favourite stores & online this
+                  week...
+                </h2>
                 <button className="text-left underline text-sm text-black">
                   Read more <i className="bi bi-arrow-up-right"></i>
                 </button>
               </div>
             </div>
-            <div className="flex-grow h-[50%] lg:h-[70%] rounded-xl overflow-hidden">
+            <div className="relative flex-grow h-[50%] lg:h-[70%] rounded-xl overflow-hidden">
               <img
                 src={HERO_IMG_2}
                 alt="hero-img2"
                 className="object-cover w-full h-full"
               />
+              <div className="absolute bottom-6 left-5 z-10 flex flex-col gap-2 lg:gap-4 font-bold">
+                <p className="text-white text-sm">FEATURED CATEGORIES</p>
+                <h1 className="text-4xl lg:text-6xl font-normal text-white">
+                  Lifestyle
+                </h1>
+                <button className="text-left underline text-sm text-white">
+                  Read more <i className="bi bi-arrow-up-right"></i>
+                </button>
+              </div>
             </div>
           </div>
         </div>
