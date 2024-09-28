@@ -18,7 +18,10 @@ const Navbar = () => {
 
   return (
     <section className="sticky top-0 z-50 flex items-center justify-between w-full p-3 bg-[#f1f1f1] border border-b">
-      <div className="flex items-center gap-2">
+      <div
+        className="flex items-center gap-2 cursor-pointer"
+        onClick={() => navigate("/")}
+      >
         <img src={LOGO_IMG} alt="logo" className="object-cover w-8 h-8" />
         <h1 className="text-2xl font-bold">EComposer</h1>
       </div>
@@ -26,7 +29,7 @@ const Navbar = () => {
         <select
           name="category"
           id="category"
-          className="border border-black rounded bg-white border-none outline-none px-2 py-1"
+          className="border border-black rounded bg-white border-none outline-none px-2 py-1 cursor-pointer"
           onChange={handleCategoryChange}
         >
           <option value="1">Blog Listing</option>
