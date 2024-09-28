@@ -1,6 +1,7 @@
 import Fashion from "./components/Fashion";
 import HeroSection from "./components/HeroSection";
 import LifeStyle from "./components/LifeStyle";
+import MiddleCards from "./components/MiddleCards";
 import NewsLetter from "./components/NewsLetter";
 
 const BlogListing = () => {
@@ -9,6 +10,7 @@ const BlogListing = () => {
       <HeroSection />
       <NewsLetter />
       <Fashion />
+      <MiddleCards />
       <LifeStyle />
     </>
   );

@@ -29,3 +29,8 @@ export const LIFE_STYLE_IMG_2  ="https://cdn.shopify.com/s/files/1/0726/1221/711
 export const LIFE_STYLE_IMG_3  ="https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-6_720x.png?v=1683624505"
 export const LIFE_STYLE_IMG_4  ="https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-7_720x.png?v=1683624537"
 export const LIFE_STYLE_IMG_5  ="https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-5_720x.png?v=1683624796"
+
+
+export const MIDDLE_CARDS_IMG_1 = "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-11_720x.png?v=1683625649"
+export const MIDDLE_CARDS_IMG_2 = "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-10_720x.png?v=1683625618"
+export const MIDDLE_CARDS_IMG_3 = "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-9_720x.png?v=1683625585"
