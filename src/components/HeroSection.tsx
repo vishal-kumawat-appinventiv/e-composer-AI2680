@@ -5,7 +5,7 @@ const HeroSection = () => {
     <>
       <section className="p-4 w-full box-border">
         <div className="grid grid-cols-1 lg:grid-cols-[70%_29%] gap-4 w-full max-w-full overflow-hidden">
-          <div className="relative col1 max-h-[95vh] rounded-xl overflow-hidden">
+          <div className="relative col1 max-h-[90vh] rounded-xl overflow-hidden">
             <img
               src={HERO_IMG_1}
               alt="hero-img"
