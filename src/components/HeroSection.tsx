@@ -27,7 +27,7 @@ const HeroSection = () => {
                   />
                   Admin Dinh
                 </button>
-                <button className="p-2 px-4 rounded-full border border-white cursor-pointer hover:bg-pink-400">
+                <button className="p-2 px-4 rounded-full border border-white cursor-pointer hover:bg-red-400">
                   <i className="bi bi-arrow-up-right text-white"></i>
                 </button>
               </div>
