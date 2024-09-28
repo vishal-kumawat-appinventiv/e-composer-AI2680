@@ -3,6 +3,7 @@ import HeroSection from "./components/HeroSection";
 import LifeStyle from "./components/LifeStyle";
 import MiddleCards from "./components/MiddleCards";
 import NewsLetter from "./components/NewsLetter";
+import Spotlight from "./components/Spotlight";
 
 const BlogListing = () => {
   return (
@@ -10,6 +11,7 @@ const BlogListing = () => {
       <HeroSection />
       <NewsLetter />
       <Fashion />
+      <Spotlight />
       <MiddleCards />
       <LifeStyle />
     </>
