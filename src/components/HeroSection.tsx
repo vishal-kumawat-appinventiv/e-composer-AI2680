@@ -35,14 +35,14 @@ const HeroSection = () => {
           </div>
           <div className="col2 flex flex-col justify-center gap-6 h-full w-full min-w-0 overflow-hidden">
             <div className="relative bg-[#bde48a] flex-grow h-[50%] lg:h-[30%] w-full rounded-xl">
-              <div className="absolute z-10 top-5 right-5">
+              <div className="absolute z-10 top-2 lg:top-5 right-2 lg:right-5">
                 <button className="px-3 py-2 border-black border-2 rounded-full">
                   <i className="bi bi-lightning-charge"></i>
                 </button>
               </div>
               <div className="absolute bottom-5 left-5 z-10 flex flex-col gap-2 lg:gap-4 font-bold">
                 <p className="text-black text-sm">DESIGN</p>
-                <h2 className="text-black text-2xl lg:text-3xl">
+                <h2 className="text-black text-xl lg:text-3xl">
                   Here's what's new in your favourite stores & online this
                   week...
                 </h2>
