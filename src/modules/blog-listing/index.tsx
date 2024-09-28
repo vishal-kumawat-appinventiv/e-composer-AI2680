@@ -1,3 +1,4 @@
+import Fashion from "./components/Fashion";
 import HeroSection from "./components/HeroSection";
 import NewsLetter from "./components/NewsLetter";
 
@@ -6,6 +7,7 @@ const BlogListing = () => {
     <>
       <HeroSection />
       <NewsLetter />
+      <Fashion />
     </>
   );
 };
