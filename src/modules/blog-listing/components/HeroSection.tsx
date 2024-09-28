@@ -1,4 +1,4 @@
-import { HERO_IMG_1, HERO_IMG_2, LOGO_IMG } from "../utils/mock";
+import { HERO_IMG_1, HERO_IMG_2, LOGO_IMG } from "../../../utils/mock";
 
 const HeroSection = () => {
   return (
