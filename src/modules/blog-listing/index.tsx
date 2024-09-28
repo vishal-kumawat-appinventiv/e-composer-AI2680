@@ -1,5 +1,11 @@
+import HeroSection from "../../components/HeroSection";
+
 const BlogListing = () => {
-  return <h1 className="text-6xl">BlogListing</h1>;
+  return (
+    <>
+      <HeroSection />
+    </>
+  );
 };
 
 export default BlogListing;
