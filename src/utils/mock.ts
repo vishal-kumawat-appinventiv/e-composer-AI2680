@@ -36,3 +36,5 @@ export const MIDDLE_CARDS_IMG_2 = "https://cdn.shopify.com/s/files/1/0726/1221/7
 export const MIDDLE_CARDS_IMG_3 = "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-9_720x.png?v=1683625585"
 
 export const SPOTLIGHT_IMG_1 = "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-12_1100x.png?v=1683625677"
+
+export const CONTACT_US_IMG_1 = "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-2RgmJOxbvBbg-hr-search.png?v=1724402439"
