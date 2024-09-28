@@ -1,5 +1,6 @@
 import Fashion from "./components/Fashion";
 import HeroSection from "./components/HeroSection";
+import LifeStyle from "./components/LifeStyle";
 import NewsLetter from "./components/NewsLetter";
 
 const BlogListing = () => {
@@ -8,6 +9,7 @@ const BlogListing = () => {
       <HeroSection />
       <NewsLetter />
       <Fashion />
+      <LifeStyle />
     </>
   );
 };

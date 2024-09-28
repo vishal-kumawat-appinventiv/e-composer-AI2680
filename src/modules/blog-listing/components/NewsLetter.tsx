@@ -1,6 +1,6 @@
 const NewsLetter = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 my-8">
+    <div className="max-w-7xl mx-auto px-4 mt-20">
       <section className="border rounded-xl flex py-10 px-2 lg:px-0 w-full items-center justify-evenly flex-col sm:flex-row">
         <div className="mb-4 sm:mb-0">
           <i className="bi bi-send text-5xl"></i>
