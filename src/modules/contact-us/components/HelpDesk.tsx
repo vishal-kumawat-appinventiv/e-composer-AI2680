@@ -1,6 +1,6 @@
 import { HELP_DESK, HelpDeskType } from "../../../utils/mock";
 
-const HelpDesk = () => {
+const HelpDesk: React.FC = () => {
   return (
     <section className="max-w-7xl mx-auto px-4 mt-44 lg:mt-10 mb-20">
       <div className="flex items-center justify-center w-full mb-10">

@@ -1,6 +1,7 @@
+import React from "react";
 import { OTHER_QUESTIONS, OtherQuestionsType } from "../../../utils/mock";
 
-const OtherQuestions = () => {
+const OtherQuestions: React.FC = () => {
   return (
     <section className="max-w-7xl mx-auto px-4 mt-10 mb-32">
       <Heading />
@@ -15,7 +16,7 @@ const OtherQuestions = () => {
 
 export default OtherQuestions;
 
-const Heading = () => {
+const Heading: React.FC = () => {
   return (
     <div className="flex flex-col gap-3 items-center justify-center w-full mb-10">
       <h1 className="text-2xl lg:text-4xl text-black">Any other questions?</h1>
