@@ -1,10 +1,13 @@
-import { CONTACT_US_HERO_CARDS } from "../../../utils/mock";
+import {
+  CONTACT_US_HERO_CARDS,
+  ContactUsHeroCardType,
+} from "../../../utils/mock";
 
 const HeroCards = () => {
   return (
     <section className="grid grid-cols-1 lg:grid-cols-2 gap-5 w-full px-4">
       {CONTACT_US_HERO_CARDS.map((card) => (
-        <Card key={card.id} {...card} />
+        <Card key={card.id} ele={card} />
       ))}
     </section>
   );
@@ -13,27 +16,17 @@ const HeroCards = () => {
 export default HeroCards;
 
 interface CardProps {
-  icon: string;
-  title: string;
-  description: string;
-  buttonText: string;
-  buttonIcon: string;
+  ele: ContactUsHeroCardType;
 }
 
-const Card: React.FC<CardProps> = ({
-  icon,
-  title,
-  description,
-  buttonText,
-  buttonIcon,
-}) => {
+const Card: React.FC<CardProps> = ({ ele }) => {
   return (
-    <div className="bg-white flex flex-col p-4 justify-center items-center gap-3 h-full w-full overflow-hidden rounded-xl border-2">
-      <i className={icon}></i>
-      <h4 className="text-2xl text-black">{title}</h4>
-      <p className="text-sm text-gray-500">{description}</p>
+    <div className="bg-white flex flex-col p-4 juele?.stify-center items-center gap-3 h-full w-full overflow-hidden rounded-xl border-2">
+      <i className={ele?.icon}></i>
+      <h4 className="text-2xl text-black">{ele?.title}</h4>
+      <p className="text-sm text-gray-500">{ele?.description}</p>
       <button className="text-white bg-black py-2 px-4 rounded-l-full rounded-r-full hover:bg-purple-200 hover:text-black transition-colors duration-500">
-        {buttonText} <i className={buttonIcon}></i>
+        {ele?.buttonText} <i className={ele?.buttonIcon}></i>
       </button>
     </div>
   );

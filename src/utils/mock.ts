@@ -209,7 +209,16 @@ export const FOOTER_LINKS: FooterLinkType[] = [
   },
 ];
 
-export const CONTACT_US_HERO_CARDS = [
+export interface ContactUsHeroCardType {
+  id: number;
+  icon: string;
+  title: string;
+  description: string;
+  buttonText: string;
+  buttonIcon: string;
+}
+
+export const CONTACT_US_HERO_CARDS: ContactUsHeroCardType[] = [
   {
     id: 1,
     icon: "bi bi-geo-alt text-red-500 text-4xl",
