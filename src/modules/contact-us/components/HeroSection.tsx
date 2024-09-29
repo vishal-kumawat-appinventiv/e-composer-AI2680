@@ -16,7 +16,7 @@ const HeroSection = () => {
         <div className="absolute top-40 lg:top-72 left-1/2 transform -translate-x-1/2 text-center w-full">
           <SearchBar />
         </div>
-        <div className="absolute -bottom-[9rem] lg:bottom-20 left-1/2 transform -translate-x-1/2 text-center w-full lg:max-w-[40%]">
+        <div className="absolute -bottom-[9.5rem] lg:bottom-20 left-1/2 transform -translate-x-1/2 text-center w-full lg:max-w-[40%]">
           <HeroCards />
         </div>
       </div>

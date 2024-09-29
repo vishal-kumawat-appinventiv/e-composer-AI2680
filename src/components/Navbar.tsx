@@ -1,40 +1,28 @@
 import { useNavigate } from "react-router-dom";
 import { LOGO_IMG } from "../utils/mock";
-import React from "react";
+import NavSelect from "./NavSelect";
 
 const Navbar = () => {
   const navigate = useNavigate();
 
-  const handleCategoryChange = (
-    event: React.ChangeEvent<HTMLSelectElement>
-  ) => {
-    const selectedValue = event.target.value;
-    if (selectedValue === "1") {
-      navigate("/");
-    } else if (selectedValue === "2") {
-      navigate("/contact");
-    }
-  };
-
   return (
     <section className="sticky top-0 z-50 flex items-center justify-between w-full p-3 bg-[#f1f1f1] border border-b">
+      <div className="w-full flex items-center justify-between lg:hidden">
+        <div className="flex gap-2">
+          <img src={LOGO_IMG} alt="logo" className="object-cover w-8 h-8" />
+          <h1 className="text-2xl font-bold">EComposer</h1>
+        </div>
+        <NavSelect />
+      </div>
       <div
-        className="flex items-center gap-2 cursor-pointer"
+        className="hidden lg:flex items-center gap-2 cursor-pointer"
         onClick={() => navigate("/")}
       >
         <img src={LOGO_IMG} alt="logo" className="object-cover w-8 h-8" />
         <h1 className="text-2xl font-bold">EComposer</h1>
       </div>
       <div className="hidden lg:flex items-center gap-3">
-        <select
-          name="category"
-          id="category"
-          className="border border-black rounded bg-white border-none outline-none px-2 py-1 cursor-pointer"
-          onChange={handleCategoryChange}
-        >
-          <option value="1">Blog Listing</option>
-          <option value="2">Contact Us</option>
-        </select>
+        <NavSelect />
         <input
           type="text"
           placeholder="Type something to find template"
