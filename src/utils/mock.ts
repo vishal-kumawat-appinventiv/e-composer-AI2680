@@ -155,8 +155,10 @@ export const OTHER_QUESTIONS: OtherQuestionsType[] = [
   },
 ];
 
-export const FOOTER_IMG =
+export const FOOTER_IMG_1 =
   "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-4V9nWEPuPOlogo-hc-1.png?v=1724641994";
+export const FOOTER_IMG_2 =
+  "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-ZTbOOI3C6atrust-hc.png?v=1724641892";
 
 export interface FooterLinkType {
   title: string;
