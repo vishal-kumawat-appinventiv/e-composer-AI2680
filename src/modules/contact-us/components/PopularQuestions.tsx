@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { faqs } from "../../../utils/mock";
+import { FAQS, FaqType } from "../../../utils/mock";
 
 const PopularAskedQuestions: React.FC = () => {
   return (
@@ -11,7 +11,7 @@ const PopularAskedQuestions: React.FC = () => {
           </h1>
         </div>
         <div className="p-4 max-w-7xl mx-auto border rounded-2xl bg-white">
-          {faqs.map((faq, index) => (
+          {FAQS.map((faq, index) => (
             <QuestionBox key={index} faq={faq} index={index} />
           ))}
         </div>
@@ -23,7 +23,7 @@ const PopularAskedQuestions: React.FC = () => {
 export default PopularAskedQuestions;
 
 interface Props {
-  faq: any;
+  faq: FaqType;
   index: number;
 }
 
@@ -36,7 +36,7 @@ const QuestionBox: React.FC<Props> = ({ faq, index }) => {
 
   return (
     <div
-      className={`${index !== faqs.length - 1 && "border-b"} pb-4 p-4 lg:p-8`}
+      className={`${index !== FAQS.length - 1 && "border-b"} pb-4 p-4 lg:p-8`}
     >
       <div
         className="flex justify-between items-center cursor-pointer"

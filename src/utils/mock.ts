@@ -102,12 +102,12 @@ export const HELP_DESK: HelpDeskType[] = [
   },
 ];
 
-export interface FAQ {
+export interface FaqType {
   q: string;
   ans: string;
 }
 
-export const faqs: FAQ[] = [
+export const FAQS: FaqType[] = [
   {
     q: "How do I join the affiliate program?",
     ans: "Simply sign up through our affiliate program page by filling out the registration form. Once approved, you'll receive a unique affiliate link to start promoting our products.",
