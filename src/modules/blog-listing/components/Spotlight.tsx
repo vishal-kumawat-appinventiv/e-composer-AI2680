@@ -1,4 +1,5 @@
-import { SPOTLIGHT_IMG_1 } from "../../../utils/mock";
+import React from "react";
+import { SPOTLIGHT_DATA, SpotlightDataType } from "../../../utils/mock";
 
 const Spotlight = () => {
   return (
@@ -11,33 +12,43 @@ const Spotlight = () => {
 
       <div className="overflow-hidden w-full mt-[-120px] lg:mt-[-90px] mx-auto z-10 relative">
         <img
-          src={SPOTLIGHT_IMG_1}
+          src={SPOTLIGHT_DATA.img}
           alt="Spotlight-img"
           className="w-full h-full object-cover rounded-xl"
         />
       </div>
 
-      <div className="bottomCard flex flex-col gap-3 items-center justify-center max-w-4xl mx-auto bg-white mt-[-10px] lg:mt-[-100px] z-20 relative rounded-xl p-8">
-        <p className="text-sm font-bold">By Admin Dinh / in May 9, 2023</p>
-        <h1 className="text-2xl lg:text-4xl text-black hover:text-red-400 text-center">
-          Travel Tales and Cultural Immersion
-        </h1>
-        <p className="text-sm text-[#878787] text-center">
-          Forget the tourist hotspots and explore the road less traveled as we
-          uncover hidden gems around the world. From enchanting small towns
-          and...
-        </p>
-        <div className="flex gap-4 items-center justify-center">
-          <button className="bg-[#edf1f8] text-black rounded-l-full rounded-r-full text-sm p-1 px-2">
-            DESIGN
-          </button>
-          <button className="bg-[#edf1f8] text-black rounded-l-full rounded-r-full text-sm p-1 px-2">
-            LIFESTYLE
-          </button>
-        </div>
-      </div>
+      <BottomBox data={SPOTLIGHT_DATA} />
     </div>
   );
 };
 
 export default Spotlight;
+
+interface BottomBoxProps {
+  data: SpotlightDataType;
+}
+
+const BottomBox: React.FC<BottomBoxProps> = ({ data }) => {
+  return (
+    <div className="bottomCard flex flex-col gap-3 items-center justify-center max-w-4xl mx-auto bg-white mt-[-10px] lg:mt-[-100px] z-20 relative rounded-xl p-8">
+      <p className="text-sm font-bold">{data.date}</p>
+      <h1 className="text-2xl lg:text-4xl text-black hover:text-red-400 text-center">
+        {data.title}
+      </h1>
+      <p className="text-sm text-[#878787] text-center max-w-[75%]">
+        {data.desc}
+      </p>
+      <div className="flex gap-4 items-center justify-center">
+        {data.tag.map((tag, index) => (
+          <button
+            key={index}
+            className="bg-[#edf1f8] text-black rounded-l-full rounded-r-full text-sm p-1 px-2"
+          >
+            {tag}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+};
