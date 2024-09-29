@@ -1,5 +1,6 @@
 import BlogListing from "../modules/blog-listing";
 import ContactUs from "../modules/contact-us";
+import NotFound from "../modules/not-found-404";
 
 export const ROUTES = [
   {
@@ -10,6 +11,11 @@ export const ROUTES = [
   {
     path: "/contact",
     component: ContactUs,
+    isPrivate: false,
+  },
+  {
+    path: "/*",
+    component: NotFound,
     isPrivate: false,
   },
 ];
