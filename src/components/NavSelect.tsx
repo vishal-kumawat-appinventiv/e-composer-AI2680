@@ -19,7 +19,7 @@ const NavSelect = () => {
     <select
       name="category"
       id="category"
-      className="border border-black rounded bg-white border-none outline-none px-2 py-1 cursor-pointer"
+      className="border-2 rounded-lg bg-white outline-none px-2 py-1 cursor-pointer"
       onChange={handleCategoryChange}
     >
       <option value="1">Blog Listing</option>

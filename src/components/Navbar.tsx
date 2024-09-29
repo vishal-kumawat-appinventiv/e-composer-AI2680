@@ -23,11 +23,14 @@ const Navbar = () => {
       </div>
       <div className="hidden lg:flex items-center gap-3">
         <NavSelect />
-        <input
-          type="text"
-          placeholder="Type something to find template"
-          className="border border-black rounded px-2"
-        />
+        <div className="bg-white border border-black rounded px-2 flex items-center">
+          <i className="bi bi-search"></i>
+          <input
+            type="text"
+            placeholder="Type something to find template"
+            className="outline-none border-none text-sm px-3 w-full"
+          />
+        </div>
       </div>
       <div className="hidden lg:flex items-center gap-3">
         <button className="text-white bg-black p-1 text-sm rounded-lg px-2">
