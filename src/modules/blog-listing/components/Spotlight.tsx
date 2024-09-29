@@ -36,7 +36,7 @@ const BottomBox: React.FC<BottomBoxProps> = ({ data }) => {
       <h1 className="text-2xl lg:text-4xl text-black hover:text-red-400 text-center">
         {data.title}
       </h1>
-      <p className="text-sm text-[#878787] text-center max-w-[75%]">
+      <p className="text-sm text-[#878787] text-center w-full lg:max-w-[75%]">
         {data.desc}
       </p>
       <div className="flex gap-4 items-center justify-center">
