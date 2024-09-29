@@ -161,8 +161,6 @@ export const OTHER_QUESTIONS: OtherQuestionsType[] = [
   },
 ];
 
-export const FOOTER_IMG_1 =
-  "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-4V9nWEPuPOlogo-hc-1.png?v=1724641994";
 export const FOOTER_IMG_2 =
   "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-ZTbOOI3C6atrust-hc.png?v=1724641892";
 
@@ -234,5 +232,21 @@ export const CONTACT_US_HERO_CARDS: ContactUsHeroCardType[] = [
     description: "We make it easy to return and exchange styles",
     buttonText: "Start a return",
     buttonIcon: "bi bi-arrow-right",
+  },
+];
+
+export interface ContactUsFooterCompanyType {
+  img: string;
+  email: string;
+  phone: string;
+  desc: string;
+}
+
+export const CONTACT_US_FOOTER_COMPANY: ContactUsFooterCompanyType[] = [
+  {
+    img: "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-4V9nWEPuPOlogo-hc-1.png?v=1724641994",
+    email: "info@ecomposershop.com",
+    phone: "(212) 555-1234",
+    desc: "Sign up for sale, new arrivals & more",
   },
 ];

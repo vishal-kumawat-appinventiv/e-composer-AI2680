@@ -1,18 +1,16 @@
-import { FOOTER_IMG_1, FOOTER_IMG_2, FOOTER_LINKS } from "../../../utils/mock";
+import {
+  CONTACT_US_FOOTER_COMPANY,
+  ContactUsFooterCompanyType,
+  FOOTER_IMG_2,
+  FOOTER_LINKS,
+} from "../../../utils/mock";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <section className="max-w-[75%] mx-auto px-4 mt-10 mb-5">
       <div className="grid grid-cols-1 lg:grid-cols-[30%_64%] gap-20  w-full pb-5">
         <div className="col1 flex flex-col gap-3">
-          <img
-            src={FOOTER_IMG_1}
-            alt="img"
-            className="w-20 lg:w-40 object-cover mb-3"
-          />
-          <p className="text-sm">Email: info@ecomposershop.com</p>
-          <p className="text-sm">Phone: (212) 555-1234</p>
-          <p className="mt-3">Sign up for sale, new arrivals & more</p>
+          <CompanyDetails data={CONTACT_US_FOOTER_COMPANY[0]} />
           <SignUp />
         </div>
         <div className="col2 grid grid-cols-1 lg:grid-cols-4 gap-3 w-full">
@@ -31,14 +29,14 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <BootomFooter />
+      <BootomFooter img={FOOTER_IMG_2} />
     </section>
   );
 };
 
 export default Footer;
 
-const SignUp = () => {
+const SignUp: React.FC = () => {
   return (
     <div className="flex items-center justify-between border border-black p-1">
       <div className="flex items-center gap-1 lg:gap-3 w-full lg:w-auto">
@@ -58,7 +56,7 @@ const SignUp = () => {
   );
 };
 
-const BootomFooter = () => {
+const BootomFooter = ({ img }: { img: string }) => {
   return (
     <div className="lg:flex gap-2 items-center justify-between w-full border-t pt-2">
       <div>
@@ -68,11 +66,26 @@ const BootomFooter = () => {
       </div>
       <div className="mt-3 lg:mt-0">
         <img
-          src={FOOTER_IMG_2}
+          src={img}
           alt="img"
           className="w-full h-auto lg:h-8 object-cover"
         />
       </div>
     </div>
+  );
+};
+
+const CompanyDetails = ({ data }: { data: ContactUsFooterCompanyType }) => {
+  return (
+    <>
+      <img
+        src={data?.img}
+        alt="img"
+        className="w-20 lg:w-40 object-cover mb-3"
+      />
+      <p className="text-sm">Email: {data?.email}</p>
+      <p className="text-sm">Phone: {data?.phone}</p>
+      <p className="mt-3">{data?.desc}</p>
+    </>
   );
 };
