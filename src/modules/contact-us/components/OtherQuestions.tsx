@@ -2,7 +2,7 @@ import { OTHER_QUESTIONS, OtherQuestionsType } from "../../../utils/mock";
 
 const OtherQuestions = () => {
   return (
-    <section className="max-w-7xl mx-auto px-4 mt-10 mb-20">
+    <section className="max-w-7xl mx-auto px-4 mt-10 mb-32">
       <Heading />
       <div className="border rounded-xl grid grid-cols-2 lg:grid-cols-4 gap-4 w-full p-4 mt-20">
         {OTHER_QUESTIONS.map((ele, index: number) => (

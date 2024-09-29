@@ -208,3 +208,22 @@ export const FOOTER_LINKS: FooterLinkType[] = [
     ],
   },
 ];
+
+export const CONTACT_US_HERO_CARDS = [
+  {
+    id: 1,
+    icon: "bi bi-geo-alt text-red-500 text-4xl",
+    title: "Order Tracking",
+    description: "Log in to check the status of your order",
+    buttonText: "Track your order",
+    buttonIcon: "bi bi-arrow-right",
+  },
+  {
+    id: 2,
+    icon: "bi bi-box-seam text-red-500 text-4xl",
+    title: "Return & Exchange",
+    description: "We make it easy to return and exchange styles",
+    buttonText: "Start a return",
+    buttonIcon: "bi bi-arrow-right",
+  },
+];

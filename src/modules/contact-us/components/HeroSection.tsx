@@ -14,7 +14,7 @@ const HeroSection = () => {
     setAnnimation((prevState) => ({ ...prevState, 1: true }));
     setTimeout(() => {
       setAnnimation((prevState) => ({ ...prevState, 2: true }));
-    }, 200);
+    }, 100);
 
     return () => {
       setAnnimation((prevState) => ({ ...prevState, 1: false }));
