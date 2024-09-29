@@ -12,7 +12,7 @@ const PopularAskedQuestions: React.FC = () => {
         </div>
         <div className="p-4 max-w-7xl mx-auto border rounded-2xl bg-white">
           {faqs.map((faq, index) => (
-            <QuestionBox key={index} faq={faq} index={0} />
+            <QuestionBox key={index} faq={faq} index={index} />
           ))}
         </div>
       </section>
@@ -35,7 +35,9 @@ const QuestionBox: React.FC<Props> = ({ faq, index }) => {
   };
 
   return (
-    <div className="border-b pb-4 p-4 lg:p-8">
+    <div
+      className={`${index !== faqs.length - 1 && "border-b"} pb-4 p-4 lg:p-8`}
+    >
       <div
         className="flex justify-between items-center cursor-pointer"
         onClick={() => toggleFAQ(index)}
@@ -52,7 +54,7 @@ const QuestionBox: React.FC<Props> = ({ faq, index }) => {
         </button>
       </div>
       <div
-        className={`overflow-hidden transition-all duration-300 ${
+        className={`overflow-hidden transition-all duration-400 ${
           open === index ? "max-h-52" : "max-h-0"
         }`}
       >
