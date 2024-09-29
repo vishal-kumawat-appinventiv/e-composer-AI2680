@@ -10,21 +10,7 @@ const HelpDesk = () => {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-8 w-full">
         {HELP_DESK.map((ele: HelpDeskType) => (
-          <div
-            key={ele?.id}
-            className="bg-[#f4f4ff] p-8 rounded-xl flex flex-col gap-3"
-          >
-            <img
-              src={ele?.img}
-              alt="img"
-              className="object-cover w-16 h-16 text-4xl text-red-500"
-            />
-            <h2 className="text-2xl text-black">{ele?.title}</h2>
-            <p className="text-sm text-gray-500">{ele?.desc}</p>
-            <button className="text-sm hover:text-red-500 text-left">
-              View More
-            </button>
-          </div>
+          <HelpDeskCard key={ele?.id} ele={ele} />
         ))}
       </div>
     </section>
@@ -32,3 +18,20 @@ const HelpDesk = () => {
 };
 
 export default HelpDesk;
+
+const HelpDeskCard = ({ ele }: { ele: HelpDeskType }) => {
+  return (
+    <div className="bg-[#f4f4ff] p-8 rounded-xl flex flex-col gap-3">
+      <img
+        src={ele?.img}
+        alt="img"
+        className="object-cover w-16 h-16 text-4xl text-red-500"
+      />
+      <h2 className="text-2xl text-black">{ele?.title}</h2>
+      <p className="text-sm text-gray-500">{ele?.desc}</p>
+      <button className="text-sm hover:text-red-500 text-left">
+        View More
+      </button>
+    </div>
+  );
+};
