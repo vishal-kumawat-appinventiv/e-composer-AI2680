@@ -1,28 +1,8 @@
-import { useEffect, useState } from "react";
 import { HERO_IMG_1, HERO_IMG_2, LOGO_IMG } from "../../../utils/mock";
+import { useAnnimation } from "../../../hooks/useAnnimation";
 
 const HeroSection = () => {
-  const [annimation, setAnnimation] = useState({
-    1: false,
-    2: false,
-    3: false,
-  });
-
-  useEffect(() => {
-    setAnnimation((prevState) => ({ ...prevState, 1: true }));
-    setTimeout(() => {
-      setAnnimation((prevState) => ({ ...prevState, 2: true }));
-    }, 500);
-    setTimeout(() => {
-      setAnnimation((prevState) => ({ ...prevState, 3: true }));
-    }, 1000);
-
-    return () => {
-      setAnnimation((prevState) => ({ ...prevState, 1: false }));
-      setAnnimation((prevState) => ({ ...prevState, 2: false }));
-      setAnnimation((prevState) => ({ ...prevState, 3: false }));
-    };
-  }, []);
+  const annimation = useAnnimation(3, [500, 1000]);
 
   return (
     <>

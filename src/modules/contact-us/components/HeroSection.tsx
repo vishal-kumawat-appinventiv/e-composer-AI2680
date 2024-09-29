@@ -1,26 +1,11 @@
-import { useEffect, useState } from "react";
 import { CONTACT_US_IMG_1 } from "../../../utils/mock";
 import HeroCards from "./HeroCards";
 import SearchBar from "./SearchBar";
 import TopHeading from "./TopHeading";
+import { useAnnimation } from "../../../hooks/useAnnimation";
 
 const HeroSection = () => {
-  const [annimation, setAnnimation] = useState({
-    1: false,
-    2: false,
-  });
-
-  useEffect(() => {
-    setAnnimation((prevState) => ({ ...prevState, 1: true }));
-    setTimeout(() => {
-      setAnnimation((prevState) => ({ ...prevState, 2: true }));
-    }, 100);
-
-    return () => {
-      setAnnimation((prevState) => ({ ...prevState, 1: false }));
-      setAnnimation((prevState) => ({ ...prevState, 2: false }));
-    };
-  }, []);
+  const annimation = useAnnimation(2, [100]);
 
   return (
     <>
