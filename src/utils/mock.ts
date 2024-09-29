@@ -154,3 +154,49 @@ export const OTHER_QUESTIONS: OtherQuestionsType[] = [
     desc: "Support Now",
   },
 ];
+
+export const FOOTER_IMG =
+  "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-4V9nWEPuPOlogo-hc-1.png?v=1724641994";
+
+export interface FooterLinkType {
+  title: string;
+  links: string[];
+}
+
+export const FOOTER_LINKS: FooterLinkType[] = [
+  {
+    title: "About Us",
+    links: [
+      "About Us",
+      "Careers",
+      "Blog",
+      "Affiliate",
+      "Contact Us",
+      "Terms of use",
+    ],
+  },
+  {
+    title: "Resource",
+    links: [
+      "Return policy",
+      "My Account",
+      "Find a Store",
+      "Legal & Privacy",
+      "Contact",
+    ],
+  },
+  {
+    title: "Information",
+    links: ["Our Story", "Visit Our Store", "Contact Us", "Account"],
+  },
+  {
+    title: "Help",
+    links: [
+      "FAQ",
+      "Terms of Use",
+      "Privacy Policy",
+      "Cookie Policy",
+      "Sitemap",
+    ],
+  },
+];
