@@ -26,6 +26,7 @@ const Navbar = () => {
         <div className="bg-white border border-black rounded px-2 flex items-center">
           <i className="bi bi-search"></i>
           <input
+            id="search"
             type="text"
             placeholder="Type something to find template"
             className="outline-none border-none text-sm px-3 w-full"

@@ -17,8 +17,10 @@ const NewsLetter = () => {
         </div>
         <div className="border rounded flex items-center gap-2 px-2 py-1 justify-between w-full sm:w-auto mt-4 sm:mt-0">
           <input
+            id="email"
             type="text"
             placeholder="Enter your email here.."
+            autoComplete="off"
             className="outline-none border-none text-sm px-2 w-full sm:w-auto"
           />
           <button className="rounded text-white font-bold text-sm flex gap-1 bg-black px-4 lg:px-8 py-2 hover:bg-red-400">

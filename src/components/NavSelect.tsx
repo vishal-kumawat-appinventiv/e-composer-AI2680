@@ -18,7 +18,7 @@ const NavSelect = () => {
   return (
     <select
       name="category"
-      id="category"
+      id={Date.now().toString()}
       className="border-2 rounded-lg bg-white outline-none px-2 py-1 cursor-pointer"
       onChange={handleCategoryChange}
     >
