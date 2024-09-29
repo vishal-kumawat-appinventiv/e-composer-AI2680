@@ -5,10 +5,12 @@ export const ROUTES = [
   {
     path: "/",
     component: BlogListing,
+    isPrivate: true,
   },
   {
     path: "/contact",
     component: ContactUs,
+    isPrivate: false,
   },
 ];
 
