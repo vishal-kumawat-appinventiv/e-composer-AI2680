@@ -9,7 +9,6 @@ export function useAnnimation(
     for (let i = 1; i <= numberOfAnimations; i++) {
       initialState[i] = false;
     }
-    console.log(initialState);
     return initialState;
   });
 
