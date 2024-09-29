@@ -101,3 +101,27 @@ export const HELP_DESK: HelpDeskType[] = [
     desc: "Want to find a store near you?",
   },
 ];
+
+export interface FAQ {
+  q: string;
+  ans: string;
+}
+
+export const faqs: FAQ[] = [
+  {
+    q: "How do I join the affiliate program?",
+    ans: "Simply sign up through our affiliate program page by filling out the registration form. Once approved, you'll receive a unique affiliate link to start promoting our products.",
+  },
+  {
+    q: "What commission rates do you offer?",
+    ans: "We offer over 400 unique products to support a wide variety of wellness needs. The majority of these products are available through our website, however there are some that are available exclusively through our retailer partners.",
+  },
+  {
+    q: "How and when do I get paid?",
+    ans: "For over 50 years, we have set a standard for trust, safety, and efficacy, and these values have never been more relevant. During this pandemic, we remain committed to producing the highest quality products possible, from ingredient sourcing to rigorous testing and approvals, before they make their way to you and your family.",
+  },
+  {
+    q: "What marketing resources are available to affiliates?",
+    ans: "Our headquarters is in Green Bay, WI. We also have an office in Minneapolis, and a distribution center in Green Bay, WI.",
+  },
+];
