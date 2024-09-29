@@ -1,5 +1,6 @@
 import HelpDesk from "./components/HelpDesk";
 import HeroSection from "./components/HeroSection";
+import OtherQuestions from "./components/OtherQuestions";
 import PopularQuestions from "./components/PopularQuestions";
 
 const ContactUs = () => {
@@ -8,6 +9,7 @@ const ContactUs = () => {
       <HeroSection />
       <HelpDesk />
       <PopularQuestions />
+      <OtherQuestions />
     </>
   );
 };

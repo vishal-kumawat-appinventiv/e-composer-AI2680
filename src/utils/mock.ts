@@ -125,3 +125,32 @@ export const faqs: FAQ[] = [
     ans: "Our headquarters is in Green Bay, WI. We also have an office in Minneapolis, and a distribution center in Green Bay, WI.",
   },
 ];
+
+export interface OtherQuestionsType {
+  img: string;
+  title: string;
+  desc: string;
+}
+
+export const OTHER_QUESTIONS: OtherQuestionsType[] = [
+  {
+    img: "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-YGrRM9IVGXicon-lc-1.png?v=1724638892",
+    title: "Call",
+    desc: "012-345-6789",
+  },
+  {
+    img: "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-Lv4LCle25Yicon-lc-2.png?v=1724639488",
+    title: "Email",
+    desc: "Contact Us",
+  },
+  {
+    img: "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-nXKveOYRkzicon-lc-3.png?v=1724639522",
+    title: "Chat",
+    desc: "Chat Now",
+  },
+  {
+    img: "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-qX7d2R8frVicon-lc-4.png?v=1724639557",
+    title: "Message",
+    desc: "Support Now",
+  },
+];
