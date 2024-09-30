@@ -1,5 +1,5 @@
-import { BlogType } from "../../../utils/mock";
 import React from "react";
+import { BlogType } from "../../../types/type";
 
 const BlogCard = ({ data }: { data: BlogType }) => {
   return (

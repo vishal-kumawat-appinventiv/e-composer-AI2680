@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { HelpDeskType } from "../../../utils/mock";
 import { ContactContext } from "../../../context/ContactContext";
+import { HelpDeskType } from "../../../types/type";
 
 const HelpDesk: React.FC = () => {
   const { helpDesk } = useContext(ContactContext);

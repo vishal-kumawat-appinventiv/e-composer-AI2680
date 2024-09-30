@@ -1,4 +1,4 @@
-import { BlogType } from "../../../utils/mock";
+import { BlogType } from "../../../types/type";
 
 interface SpotlightCardsProps {
   data: BlogType[];

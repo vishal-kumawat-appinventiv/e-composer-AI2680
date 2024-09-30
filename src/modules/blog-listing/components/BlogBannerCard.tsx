@@ -1,5 +1,5 @@
 import React from "react";
-import { BlogType } from "../../../utils/mock";
+import { BlogType } from "../../../types/type";
 
 const BlogBannerCard = ({ data }: { data: BlogType }) => {
   return (

@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
-import { FAQS, FaqType } from "../../../utils/mock";
+import { FAQS } from "../../../utils/mock";
 import { ContactContext } from "../../../context/ContactContext";
+import { FaqType } from "../../../types/type";
 
 const PopularAskedQuestions: React.FC = () => {
   const { faq } = useContext(ContactContext);

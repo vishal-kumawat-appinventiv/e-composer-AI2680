@@ -1,5 +1,6 @@
 import { createContext, useState, ReactNode } from "react";
-import { BLOGS, BlogType } from "../../src/utils/mock";
+import { BLOGS } from "../../src/utils/mock";
+import { BlogType } from "../types/type";
 
 interface BlogContextType {
   blogs: BlogType[];

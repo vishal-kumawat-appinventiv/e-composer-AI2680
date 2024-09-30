@@ -1,6 +1,6 @@
 import { useContext, useMemo } from "react";
 import { BlogContext } from "../context/BlogContext";
-import { BlogType } from "../utils/mock";
+import { BlogType } from "../types/type";
 
 const useFetchBlogData = () => {
   const { blogs } = useContext(BlogContext);

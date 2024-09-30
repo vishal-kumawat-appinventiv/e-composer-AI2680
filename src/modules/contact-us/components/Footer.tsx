@@ -1,7 +1,7 @@
+import { ContactUsFooterCompanyType } from "../../../types/type";
 import {
   CONTACT_US_FOOTER_COMPANY,
-  ContactUsFooterCompanyType,
-  FOOTER_IMG_2,
+  FOOTER_IMG_1,
   FOOTER_LINKS,
 } from "../../../utils/mock";
 
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
           ))}
         </div>
       </div>
-      <BootomFooter img={FOOTER_IMG_2} />
+      <BootomFooter img={FOOTER_IMG_1} />
     </section>
   );
 };

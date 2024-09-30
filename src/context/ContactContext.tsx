@@ -1,5 +1,6 @@
 import { createContext, useState, ReactNode } from "react";
-import { FAQS, FaqType, HELP_DESK, HelpDeskType } from "../../src/utils/mock";
+import { FAQS, HELP_DESK } from "../../src/utils/mock";
+import { FaqType, HelpDeskType } from "../types/type";
 
 interface ContactContextType {
   helpDesk: HelpDeskType[];

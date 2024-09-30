@@ -1,7 +1,5 @@
-import {
-  CONTACT_US_HERO_CARDS,
-  ContactUsHeroCardType,
-} from "../../../utils/mock";
+import { ContactUsHeroCardType } from "../../../types/type";
+import { CONTACT_US_HERO_CARDS } from "../../../utils/mock";
 
 const HeroCards = () => {
   return (

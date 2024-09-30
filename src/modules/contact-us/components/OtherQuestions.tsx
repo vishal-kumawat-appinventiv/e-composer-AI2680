@@ -1,5 +1,6 @@
 import React from "react";
-import { OTHER_QUESTIONS, OtherQuestionsType } from "../../../utils/mock";
+import { OTHER_QUESTIONS } from "../../../utils/mock";
+import { OtherQuestionsType } from "../../../types/type";
 
 const OtherQuestions: React.FC = () => {
   return (

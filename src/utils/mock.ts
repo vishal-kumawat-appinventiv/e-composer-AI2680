@@ -1,8 +1,18 @@
 import BlogListing from "../modules/blog-listing";
 import ContactUs from "../modules/contact-us";
 import NotFound from "../modules/not-found-404";
+import {
+  BlogType,
+  ContactUsFooterCompanyType,
+  ContactUsHeroCardType,
+  FaqType,
+  FooterLinkType,
+  HelpDeskType,
+  OtherQuestionsType,
+  RoutesType,
+} from "../types/type";
 
-export const ROUTES = [
+export const ROUTES: RoutesType[] = [
   {
     path: "/",
     component: BlogListing,
@@ -19,36 +29,6 @@ export const ROUTES = [
     isPrivate: false,
   },
 ];
-
-export const HERO_IMG_1 =
-  "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/bn-bl-1.png?v=1683616783";
-export const HERO_IMG_2 =
-  "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/bn-bl-2.png?v=1683619218";
-export const LOGO_IMG =
-  "https://cdn.shopify.com/s/files/1/0726/1221/7115/users/avatar_250x250_crop_center_7b84e44b-2e69-463a-83d1-09c0337c268c.png?v=1683616182";
-
-export const FASHION_IMG_1 =
-  "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/img-icon-bl.png?v=1683620903";
-
-export const LIFE_STYLE_IMG_1 =
-  "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/img-icon-bl2.png?v=1683624622";
-
-export const CONTACT_US_IMG_1 =
-  "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-2RgmJOxbvBbg-hr-search.png?v=1724402439";
-
-export type DisplayType = "Fashion" | "Lifestyle" | "Spotlight";
-export type TagType = "DESIGN" | "LIFESTYLE" | "FASHION";
-
-export interface BlogType {
-  id: number;
-  img: string;
-  date: string;
-  title: string;
-  desc: string;
-  tag: TagType[];
-  display: DisplayType;
-  banner: boolean;
-}
 
 export const BLOGS: BlogType[] = [
   {
@@ -173,13 +153,6 @@ export const BLOGS: BlogType[] = [
   },
 ];
 
-export interface HelpDeskType {
-  id: number;
-  img: string;
-  title: string;
-  desc: string;
-}
-
 export const HELP_DESK: HelpDeskType[] = [
   {
     id: 1,
@@ -219,11 +192,6 @@ export const HELP_DESK: HelpDeskType[] = [
   },
 ];
 
-export interface FaqType {
-  q: string;
-  ans: string;
-}
-
 export const FAQS: FaqType[] = [
   {
     q: "How do I join the affiliate program?",
@@ -242,12 +210,6 @@ export const FAQS: FaqType[] = [
     ans: "Our headquarters is in Green Bay, WI. We also have an office in Minneapolis, and a distribution center in Green Bay, WI.",
   },
 ];
-
-export interface OtherQuestionsType {
-  img: string;
-  title: string;
-  desc: string;
-}
 
 export const OTHER_QUESTIONS: OtherQuestionsType[] = [
   {
@@ -271,14 +233,6 @@ export const OTHER_QUESTIONS: OtherQuestionsType[] = [
     desc: "Support Now",
   },
 ];
-
-export const FOOTER_IMG_2 =
-  "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-ZTbOOI3C6atrust-hc.png?v=1724641892";
-
-export interface FooterLinkType {
-  title: string;
-  links: string[];
-}
 
 export const FOOTER_LINKS: FooterLinkType[] = [
   {
@@ -318,15 +272,6 @@ export const FOOTER_LINKS: FooterLinkType[] = [
   },
 ];
 
-export interface ContactUsHeroCardType {
-  id: number;
-  icon: string;
-  title: string;
-  description: string;
-  buttonText: string;
-  buttonIcon: string;
-}
-
 export const CONTACT_US_HERO_CARDS: ContactUsHeroCardType[] = [
   {
     id: 1,
@@ -346,13 +291,6 @@ export const CONTACT_US_HERO_CARDS: ContactUsHeroCardType[] = [
   },
 ];
 
-export interface ContactUsFooterCompanyType {
-  img: string;
-  email: string;
-  phone: string;
-  desc: string;
-}
-
 export const CONTACT_US_FOOTER_COMPANY: ContactUsFooterCompanyType[] = [
   {
     img: "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-4V9nWEPuPOlogo-hc-1.png?v=1724641994",
@@ -361,3 +299,22 @@ export const CONTACT_US_FOOTER_COMPANY: ContactUsFooterCompanyType[] = [
     desc: "Sign up for sale, new arrivals & more",
   },
 ];
+
+export const HERO_IMG_1 =
+  "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/bn-bl-1.png?v=1683616783";
+export const HERO_IMG_2 =
+  "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/bn-bl-2.png?v=1683619218";
+export const LOGO_IMG =
+  "https://cdn.shopify.com/s/files/1/0726/1221/7115/users/avatar_250x250_crop_center_7b84e44b-2e69-463a-83d1-09c0337c268c.png?v=1683616182";
+
+export const FASHION_IMG_1 =
+  "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/img-icon-bl.png?v=1683620903";
+
+export const LIFE_STYLE_IMG_1 =
+  "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/img-icon-bl2.png?v=1683624622";
+
+export const CONTACT_US_IMG_1 =
+  "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-2RgmJOxbvBbg-hr-search.png?v=1724402439";
+
+export const FOOTER_IMG_1 =
+  "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-ZTbOOI3C6atrust-hc.png?v=1724641892";
