@@ -52,6 +52,7 @@ The Contact Us Page is having following Components <br />
 ```
 
 ### 2.2 TailwindCSS + Responsive Design
+
 - TailwindCSS is a utility-first CSS framework that allows you to build custom designs quickly and easily.
 - It provides a set of pre-built classes that can be used to style HTML elements, making it easy to create responsive designs.
 
@@ -76,6 +77,7 @@ The Contact Us Page is having following Components <br />
 ```
 
 ### 2.4 Error Boundary (React Error Boundary)
+
 - Error Boundary is a React component that catches errors in its child components and renders a fallback UI.
 - It provides a way to handle errors gracefully and prevent them from crashing the entire application.
 
@@ -86,6 +88,7 @@ The Contact Us Page is having following Components <br />
 ```
 
 ### 2.5 React Router
+
 - React Router is a popular library for handling routing in React applications.
 - It provides a way to define routes and navigate between them, making it easy to create complex navigation structures.
 
@@ -94,12 +97,20 @@ The Contact Us Page is having following Components <br />
   "react-router-dom": "^6.26.2",
 }
 ```
+
+### 2.6 HeroSection Annimations
+
+- useAnnimations is a custom hook that triggers the animation on the component.
+- Annimations are triggred on components mounting and unmounting , for both Blog Listing Page and Contact Us Page.
+- After triggering the animation, the component is rendered with the animation using the transition-transform property from TailwindCSS.
+
 <br/>
 <br/>
 
 ## 3. Approaches Used while Development
 
 ### 3.1 Context API
+
 - Context API is a feature in React that allows you to share data between components without passing props down the tree.
 - Not used Redux or any other state management library because the data is static and not dynamic.
 - For synonymous data handling, Context API is a good choice , and also a inbuild feature in React.
@@ -108,13 +119,16 @@ The Contact Us Page is having following Components <br />
 - Contact Us Page - Fetching the data from ContactContext and rendering the component.
 
 ### 3.2 Custom Hooks
+
 - Custom Hooks are functions that let you reuse stateful logic between components.
 - Used in Blog Listing Page.
 - Blog Listing Page - Fetching the data from useFetchBlogData hook and rendering the component.
 - useFetchBlogData hook - Filters the data based on the display and banner type.
-- useFetchBlogData hook - Reduces the code complexity and improves performance.
+- useAnnimation hook - triggers the animation on the component.
+- useFetchBlogData , useAnnimation hook - Fetching the data from the API and rendering the component.
 
 ### 3.3 Routes HOC (Higher Order Component)
+
 - Routes HOC is a higher-order component that allows you to define routes and navigate between them.
 - Used in Blog Listing Page and Contact Us Page.
 - 2 types - Public HOC and Private HOC.
@@ -123,11 +137,13 @@ The Contact Us Page is having following Components <br />
 - Assumes that user is logged in ( isUser = true ).
 
 ### 3.5 Memorization Techniques
+
 - Memorization Techniques are techniques used to improve the performance of a system by reducing the number of operations required to perform a task.
 - useMemo is used in useFetchBlogData hook to memoize the data to avoid unnecessary re-renders.
 - React.Memo is used in BlogCard and BlogBannerCard components to memoize the data to avoid unnecessary re-renders as they depend on props.
 
 ### 3.6 Clean Code + Best Practices
+
 - Clean Code is a set of principles and guidelines for writing clean and maintainable code.
 - Camel Case Naming Convention - Used for variable, function.
 - Capital Letters for mock data.
@@ -140,29 +156,35 @@ The Contact Us Page is having following Components <br />
 # Installation Guide
 
 ### 1. Clone this Repo
+
 ```
 git clone https://github.com/vishal-kumawat-appinventiv/e-composer-AI2680
 ```
 
 ### 2. Install Dependencies
+
 ```
 npm install
 ```
 
 ### 3. Run the App
+
 ```
 npm run dev
 ```
 
 ### 4. Build Command
+
 ```
 npm run build
 ```
 
 ### 5. Preview Command
+
 ```
-npm run preview     
+npm run preview
 ```
+
 <br />
 <br />
 
