@@ -1,8 +1,8 @@
-# E-Composer - Vishal Kumawat
+## 👋 EComposer - Vishal Kumawat (AI2680)
 
-### Live At - https://ecomposer-ai2680.vercel.app/
+#### 🔴 Live At - https://ecomposer-ai2680.vercel.app/
 
-## Project ScreenShot
+## 📸 Project Screenshots
 
 ### 1. Blog Listing Page
 
@@ -43,6 +43,7 @@ The Contact Us Page is having following Components <br />
 
 - PWA is a web application that can be installed on the user's device and run offline.
 - It provides a native app-like experience to the user, with features such as push notifications, offline access, and app-like navigation.
+- vite-plugin-pwa is used for PWA and assets-generator for icons.
 
 ```
 {
@@ -55,6 +56,7 @@ The Contact Us Page is having following Components <br />
 
 - TailwindCSS is a utility-first CSS framework that allows you to build custom designs quickly and easily.
 - It provides a set of pre-built classes that can be used to style HTML elements, making it easy to create responsive designs.
+- TailwindCSS is used for styling and responsive design.
 
 ```
 {
@@ -67,7 +69,8 @@ The Contact Us Page is having following Components <br />
 ### 2.3 TypeScript (TS)
 
 - TypeScript is a superset of JavaScript that adds optional static typing to the language. It is a popular choice for building large-scale applications with JavaScript.
-- TypeScript provides a way to catch errors early and improve code quality.
+- TypeScript provides a way to catch errors early and improve code quality at compile time.
+- Industry standard of TypeScript is used for the project.
 
 ```
 {
@@ -80,6 +83,7 @@ The Contact Us Page is having following Components <br />
 
 - Error Boundary is a React component that catches errors in its child components and renders a fallback UI.
 - It provides a way to handle errors gracefully and prevent them from crashing the entire application.
+- Individual components are wrapped with the Error Boundary component to handle errors gracefully.
 
 ```
 {
@@ -131,7 +135,7 @@ The Contact Us Page is having following Components <br />
 
 - Routes HOC is a higher-order component that allows you to define routes and navigate between them.
 - Used in Blog Listing Page and Contact Us Page.
-- 2 types - Public HOC and Private HOC.
+- Two types - Public HOC and Private HOC.
 - Public HOC - Checks if the user is logged in and on the auth route, redirects to home, else renders children.
 - Private HOC - Checks if the user is logged in and on the auth route, renders children, else redirects to login.
 - Assumes that user is logged in ( isUser = true ).
@@ -140,13 +144,14 @@ The Contact Us Page is having following Components <br />
 
 - Memorization Techniques are techniques used to improve the performance of a system by reducing the number of operations required to perform a task.
 - useMemo is used in useFetchBlogData hook to memoize the data to avoid unnecessary re-renders.
-- React.Memo is used in BlogCard and BlogBannerCard components to memoize the data to avoid unnecessary re-renders as they depend on props.
+- React.Memo is used in some components which are only dependent on props to memoize the data to avoid unnecessary re-renders.
 
 ### 3.6 Clean Code + Best Practices
 
 - Clean Code is a set of principles and guidelines for writing clean and maintainable code.
+- Code is break down into small functions and components for maintainability and reusability.
 - Camel Case Naming Convention - Used for variable, function.
-- Capital Letters for mock data.
+- Capital Letters for mock data variables.
 - Pascal Case Naming Convention - Used for type, interface.
 - Comment is also added to eash function and component for better understanding.
 
@@ -203,4 +208,7 @@ npm run preview
 <br />
 <br />
 
-## Thanku for Reading :)
+## Thanku for Reading 😎
+
+- If you liked this project, please give it a star ⭐
+- If you have any suggestions or improvements, please feel free to create an issue or pull request.
