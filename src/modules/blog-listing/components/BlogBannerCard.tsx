@@ -1,6 +1,7 @@
+import React from "react";
 import { BlogType } from "../../../utils/mock";
 
-export const BlogBannerCard = ({ data }: { data: BlogType }) => {
+const BlogBannerCard = ({ data }: { data: BlogType }) => {
   return (
     <div className="col1 flex flex-col gap-3 h-full w-full overflow-hidden">
       <img
@@ -29,3 +30,5 @@ export const BlogBannerCard = ({ data }: { data: BlogType }) => {
     </div>
   );
 };
+
+export default React.memo(BlogBannerCard);

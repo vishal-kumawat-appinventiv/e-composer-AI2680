@@ -1,10 +1,11 @@
+import React from "react";
 import { BlogType } from "../../../utils/mock";
 
 interface SpotlightBannerProps {
   data: BlogType;
 }
 
-export const SpotlightBanner: React.FC<SpotlightBannerProps> = ({ data }) => {
+const SpotlightBanner: React.FC<SpotlightBannerProps> = ({ data }) => {
   return (
     <>
       <div className="overflow-hidden w-full mt-[-120px] lg:mt-[-90px] mx-auto z-10 relative">
@@ -36,3 +37,5 @@ export const SpotlightBanner: React.FC<SpotlightBannerProps> = ({ data }) => {
     </>
   );
 };
+
+export default React.memo(SpotlightBanner);

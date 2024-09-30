@@ -1,6 +1,6 @@
 import { BLOGS, BlogType, LIFE_STYLE_IMG_1 } from "../../../utils/mock";
-import { BlogBannerCard } from "./BlogBannerCard";
-import { BlogCard } from "./BlogCard";
+import BlogBannerCard from "./BlogBannerCard";
+import BlogCard from "./BlogCard";
 
 const LifeStyle = () => {
   const LifeStyleBlogsData = BLOGS.filter(

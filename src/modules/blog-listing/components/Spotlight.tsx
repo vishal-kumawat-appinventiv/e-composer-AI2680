@@ -1,5 +1,5 @@
 import { BLOGS, BlogType } from "../../../utils/mock";
-import { SpotlightBanner } from "./SpotlightBanner";
+import SpotlightBanner from "./SpotlightBanner";
 import SpotlightCards from "./SpotlightCards";
 
 const Spotlight = () => {

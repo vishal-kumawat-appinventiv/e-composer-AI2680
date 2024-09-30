@@ -1,6 +1,7 @@
 import { BlogType } from "../../../utils/mock";
+import React from "react";
 
-export const BlogCard = ({ data }: { data: BlogType }) => {
+const BlogCard = ({ data }: { data: BlogType }) => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-[34%_63%] gap-4 w-full">
       <img
@@ -31,3 +32,5 @@ export const BlogCard = ({ data }: { data: BlogType }) => {
     </div>
   );
 };
+
+export default React.memo(BlogCard);
