@@ -1,13 +1,17 @@
-import { BLOGS, BlogType } from "../../../utils/mock";
+import { useContext } from "react";
+import { BlogType } from "../../../utils/mock";
 import SpotlightBanner from "./SpotlightBanner";
 import SpotlightCards from "./SpotlightCards";
+import { BlogContext } from "../../../context/BlogContext";
 
 const Spotlight = () => {
-  const SpotlightBlogsData = BLOGS.filter(
+  const { blogs } = useContext(BlogContext);
+
+  const SpotlightBlogsData = blogs.filter(
     (ele: BlogType) => ele?.display === "Spotlight" && ele?.banner === false
   );
 
-  const SpotlightBannerData = BLOGS.filter(
+  const SpotlightBannerData = blogs.filter(
     (ele: BlogType) => ele?.display === "Spotlight" && ele?.banner === true
   );
 

@@ -1,13 +1,17 @@
-import { BLOGS, BlogType, LIFE_STYLE_IMG_1 } from "../../../utils/mock";
+import { useContext } from "react";
+import { BlogType, LIFE_STYLE_IMG_1 } from "../../../utils/mock";
 import BlogBannerCard from "./BlogBannerCard";
 import BlogCard from "./BlogCard";
+import { BlogContext } from "../../../context/BlogContext";
 
 const LifeStyle = () => {
-  const LifeStyleBlogsData = BLOGS.filter(
+  const { blogs } = useContext(BlogContext);
+
+  const LifeStyleBlogsData = blogs.filter(
     (ele: BlogType) => ele?.display === "Lifestyle" && ele?.banner === false
   );
 
-  const LifeStyleBlogsBanner = BLOGS.filter(
+  const LifeStyleBlogsBanner = blogs.filter(
     (ele: BlogType) => ele?.display === "Lifestyle" && ele?.banner === true
   );
 
