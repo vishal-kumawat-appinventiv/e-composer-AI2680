@@ -1,19 +1,10 @@
-import { useContext } from "react";
-import { BlogType, FASHION_IMG_1 } from "../../../utils/mock";
+import { FASHION_IMG_1 } from "../../../utils/mock";
 import BlogBannerCard from "./BlogBannerCard";
 import BlogCard from "./BlogCard";
-import { BlogContext } from "../../../context/BlogContext";
+import useFetchBlogData from "../../../hooks/useFetchBlogData";
 
 const Fashion = () => {
-  const { blogs } = useContext(BlogContext);
-
-  const FashionBlogsData = blogs.filter(
-    (ele: BlogType) => ele?.display === "Fashion" && ele?.banner === false
-  );
-
-  const FashionBannerData = blogs.filter(
-    (ele: BlogType) => ele?.display === "Fashion" && ele?.banner === true
-  );
+  const { FashionBlogsData, FashionBannerData } = useFetchBlogData();
 
   return (
     <div className="max-w-7xl mx-auto px-4 mt-20">

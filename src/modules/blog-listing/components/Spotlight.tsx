@@ -1,19 +1,9 @@
-import { useContext } from "react";
-import { BlogType } from "../../../utils/mock";
 import SpotlightBanner from "./SpotlightBanner";
 import SpotlightCards from "./SpotlightCards";
-import { BlogContext } from "../../../context/BlogContext";
+import useFetchBlogData from "../../../hooks/useFetchBlogData";
 
 const Spotlight = () => {
-  const { blogs } = useContext(BlogContext);
-
-  const SpotlightBlogsData = blogs.filter(
-    (ele: BlogType) => ele?.display === "Spotlight" && ele?.banner === false
-  );
-
-  const SpotlightBannerData = blogs.filter(
-    (ele: BlogType) => ele?.display === "Spotlight" && ele?.banner === true
-  );
+  const { SpotlightBannerData, SpotlightBlogsData } = useFetchBlogData();
 
   return (
     <div className="max-w-7xl mx-auto px-4 mt-20 relative">
