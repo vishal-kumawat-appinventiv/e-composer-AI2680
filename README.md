@@ -18,10 +18,10 @@
 
 E-Composer is a web application that provides users 2 pages <br />
 
-1. Home Page <br />
+1. Blog Listing Page <br />
 2. Contact Us Page <br />
 
-The Home Page is having following Components <br />
+The Blog Listing Page is having following Components <br />
 
 1. Hero Section <br />
 2. News Letter <br />
@@ -166,7 +166,7 @@ npm run preview
 <br />
 <br />
 
-# Tech Stack
+# Links
 
 - TailwindCSS - https://tailwindcss.com/
 - Vite - https://vitejs.dev/
@@ -178,5 +178,7 @@ npm run preview
 - ESLint - https://eslint.org/
 - Prettier - https://prettier.io/
 
+<br />
+<br />
 
 ## Thanku for Reading :)
