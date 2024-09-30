@@ -33,13 +33,6 @@ export const FASHION_IMG_1 =
 export const LIFE_STYLE_IMG_1 =
   "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/img-icon-bl2.png?v=1683624622";
 
-export const MIDDLE_CARDS_IMG_1 =
-  "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-11_720x.png?v=1683625649";
-export const MIDDLE_CARDS_IMG_2 =
-  "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-10_720x.png?v=1683625618";
-export const MIDDLE_CARDS_IMG_3 =
-  "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-9_720x.png?v=1683625585";
-
 export const CONTACT_US_IMG_1 =
   "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-2RgmJOxbvBbg-hr-search.png?v=1724402439";
 
@@ -138,23 +131,47 @@ export const BLOGS: BlogType[] = [
     display: "Lifestyle",
     banner: false,
   },
+  {
+    id: 9,
+    img: "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-12_1100x.png?v=1683625677",
+    date: "By Admin Dinh / in May 9, 2023",
+    title: "Travel Tales and Cultural Immersion",
+    desc: "Forget the tourist hotspots and explore the road less traveled as we uncover hidden gems around the world. From enchanting small towns and...",
+    tag: ["DESIGN", "LIFESTYLE"],
+    display: "Spotlight",
+    banner: true,
+  },
+  {
+    id: 10,
+    img: "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-11_720x.png?v=1683625649",
+    date: "By Admin Dinh / in May 9, 2023",
+    title: "Celebrating Artistic Visionaries",
+    desc: "In this blog, we turn our attention to the world of art and creativity, showcasing...",
+    tag: ["DESIGN", "LIFESTYLE"],
+    display: "Spotlight",
+    banner: false,
+  },
+  {
+    id: 11,
+    img: "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-10_720x.png?v=1683625618",
+    date: "By Admin Dinh / in May 9, 2023",
+    title: "Cutting-Edge Technologies and Ideas",
+    desc: "Join us on a journey through the world of innovation as we highlight groundbreaking technologies,...",
+    tag: ["DESIGN", "LIFESTYLE"],
+    display: "Spotlight",
+    banner: false,
+  },
+  {
+    id: 12,
+    img: "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-9_720x.png?v=1683625585",
+    date: "By Admin Dinh / in May 9, 2023",
+    title: "Stories of Triumph and Resilience",
+    desc: "we shine a spotlight on individuals who have overcome adversity, achieved remarkable success, or made...",
+    tag: ["DESIGN"],
+    display: "Spotlight",
+    banner: false,
+  },
 ];
-
-export interface SpotlightDataType {
-  img: string;
-  date: string;
-  title: string;
-  desc: string;
-  tag: string[];
-}
-
-export const SPOTLIGHT_DATA: SpotlightDataType = {
-  img: "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-12_1100x.png?v=1683625677",
-  date: "Admin Dinh / May 9, 2023",
-  title: "Travel Tales and Cultural Immersion",
-  desc: "Forget the tourist hotspots and explore the road less traveled as we uncover hidden gems around the world. From enchanting small towns and...",
-  tag: ["DESIGN", "LIFESTYLE"],
-};
 
 export interface HelpDeskType {
   id: number;
