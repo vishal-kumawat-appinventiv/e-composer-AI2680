@@ -43,7 +43,7 @@ export default Footer;
 const SignUp: React.FC = () => {
   return (
     <div className="flex items-center justify-between border border-black p-1 flex-wrap">
-      <div className="flex items-center gap-1 lg:gap-3 w-[70%] lg:w-auto mb-2 lg:mb-0 mt-1">
+      <div className="flex items-center gap-1 lg:gap-3 w-[60%] lg:w-auto mb-2 lg:mb-0 mt-1">
         <i className="bi bi-envelope ml-2"></i>
         <input
           type="text"
