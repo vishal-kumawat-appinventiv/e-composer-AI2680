@@ -32,14 +32,6 @@ export const FASHION_IMG_1 =
 
 export const LIFE_STYLE_IMG_1 =
   "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/img-icon-bl2.png?v=1683624622";
-export const LIFE_STYLE_IMG_2 =
-  "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-8_c9accd91-b5cc-4d1c-b7c5-27c324302426_720x.png?v=1683624775";
-export const LIFE_STYLE_IMG_3 =
-  "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-6_720x.png?v=1683624505";
-export const LIFE_STYLE_IMG_4 =
-  "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-7_720x.png?v=1683624537";
-export const LIFE_STYLE_IMG_5 =
-  "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-5_720x.png?v=1683624796";
 
 export const MIDDLE_CARDS_IMG_1 =
   "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-11_720x.png?v=1683625649";
@@ -104,6 +96,46 @@ export const BLOGS: BlogType[] = [
     desc: "Cersace and Jil Sander plumping for bold prints, from colourful stripes to...",
     tag: ["DESIGN", "FASHION"],
     display: "Fashion",
+    banner: false,
+  },
+  {
+    id: 5,
+    img: "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-8_c9accd91-b5cc-4d1c-b7c5-27c324302426_720x.png?v=1683624775",
+    date: "By Admin Dinh / in May 9, 2023",
+    title: "Embracing Mindfulness in a Busy World",
+    desc: "we delve into the importance of incorporating mindfulness practices into our daily lives. Discover tips for finding inner peace, reducing stress, and cultivating...",
+    tag: ["LIFESTYLE"],
+    display: "Lifestyle",
+    banner: true,
+  },
+  {
+    id: 6,
+    img: "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-6_720x.png?v=1683624505",
+    date: "By Admin Dinh / in May 9, 2023",
+    title: "Travel Tales and Cultural Immersion",
+    desc: "Join us on a journey around the globe as we explore different...",
+    tag: ["DESIGN", "LIFESTYLE"],
+    display: "Lifestyle",
+    banner: false,
+  },
+  {
+    id: 7,
+    img: "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-7_720x.png?v=1683624537",
+    date: "By Admin Dinh / in May 9, 2023",
+    title: "Embracing Minimalism and Decluttering",
+    desc: "In a world of constant consumerism, this blog invites you to simplify...",
+    tag: ["DESIGN", "LIFESTYLE"],
+    display: "Lifestyle",
+    banner: false,
+  },
+  {
+    id: 8,
+    img: "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-5_720x.png?v=1683624796",
+    date: "By Admin Dinh / in May 9, 2023",
+    title: "Exploring Healthy Habits and Holistic Wellness",
+    desc: "Dive into a world of holistic wellness as we explore nourishing habits...",
+    tag: ["LIFESTYLE"],
+    display: "Lifestyle",
     banner: false,
   },
 ];
