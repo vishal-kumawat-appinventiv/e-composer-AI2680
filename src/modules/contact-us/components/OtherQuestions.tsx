@@ -41,7 +41,11 @@ const OuestionCard: React.FC<OuestionCardProps> = ({ ele, index }) => {
         OTHER_QUESTIONS.length - 1 !== index ? "border-r-2" : ""
       }`}
     >
-      <img src={ele?.img} alt="img" className="w-16 h-16 object-cover" />
+      <img
+        src={ele?.img}
+        alt="img"
+        className="w-10 h-10 lg:w-16 lg:h-16 object-cover"
+      />
       <h2 className="text-black text-2xl lg:text-3xl">{ele?.title}</h2>
       <h5 className="text-black underline hover:text-red-500">{ele?.desc}</h5>
     </div>

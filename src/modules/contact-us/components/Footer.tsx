@@ -7,7 +7,7 @@ import {
 
 const Footer: React.FC = () => {
   return (
-    <section className="max-w-[75%] mx-auto px-4 mt-10 mb-5">
+    <section className="w-full lg:max-w-[75%] lg:mx-auto px-4 mt-10 mb-5">
       <div className="grid grid-cols-1 lg:grid-cols-[30%_64%] gap-20  w-full pb-5">
         <div className="col1 flex flex-col gap-3">
           <CompanyDetails data={CONTACT_US_FOOTER_COMPANY[0]} />
@@ -45,11 +45,11 @@ const SignUp: React.FC = () => {
           type="text"
           name="signup"
           id="signup"
-          className="outline-none border-none w-[60%] lg:w-auto"
+          className="outline-none border-none w-full lg:w-auto mr-2"
           placeholder="Email address"
         />
       </div>
-      <button className="text-white bg-black px-2 lg:px-8 py-1 lg:py-3 text-sm hover:bg-purple-200 hover:text-black transition-colors duration-500">
+      <button className="text-white bg-black px-6 lg:px-8 py-3 lg:py-3 text-sm hover:bg-purple-200 hover:text-black transition-colors duration-500">
         Sign Up
       </button>
     </div>
@@ -81,7 +81,7 @@ const CompanyDetails = ({ data }: { data: ContactUsFooterCompanyType }) => {
       <img
         src={data?.img}
         alt="img"
-        className="w-20 lg:w-40 object-cover mb-3"
+        className="w-32 lg:w-40 object-cover mb-3"
       />
       <p className="text-sm">Email: {data?.email}</p>
       <p className="text-sm">Phone: {data?.phone}</p>
