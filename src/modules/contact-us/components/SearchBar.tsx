@@ -12,6 +12,7 @@ export default SearchBar;
 const Input: React.FC = () => {
   return (
     <input
+      id="search"
       type="text"
       placeholder="Search for answers..."
       className="outline-none border-none text-sm lg:text-lg px-3 w-full"
