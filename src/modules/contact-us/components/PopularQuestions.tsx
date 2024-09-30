@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { FAQS, FaqType } from "../../../utils/mock";
+import { ContactContext } from "../../../context/ContactContext";
 
 const PopularAskedQuestions: React.FC = () => {
+  const { faq } = useContext(ContactContext);
+
   return (
     <>
       <section className="bg-[#e0e0ff] w-full py-20 mb-20 px-4">
@@ -11,7 +14,7 @@ const PopularAskedQuestions: React.FC = () => {
           </h1>
         </div>
         <div className="p-4 max-w-7xl mx-auto border rounded-2xl bg-white">
-          {FAQS.map((faq, index) => (
+          {faq.map((faq, index: number) => (
             <QuestionBox key={index} faq={faq} index={index} />
           ))}
         </div>

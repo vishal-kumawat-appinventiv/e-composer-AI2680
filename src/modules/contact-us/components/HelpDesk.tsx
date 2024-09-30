@@ -1,6 +1,10 @@
-import { HELP_DESK, HelpDeskType } from "../../../utils/mock";
+import { useContext } from "react";
+import { HelpDeskType } from "../../../utils/mock";
+import { ContactContext } from "../../../context/ContactContext";
 
 const HelpDesk: React.FC = () => {
+  const { helpDesk } = useContext(ContactContext);
+
   return (
     <section className="max-w-7xl mx-auto px-4 mt-44 lg:mt-10 mb-20">
       <div className="flex items-center justify-center w-full mb-10">
@@ -9,7 +13,7 @@ const HelpDesk: React.FC = () => {
         </h1>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-8 w-full">
-        {HELP_DESK.map((ele: HelpDeskType) => (
+        {helpDesk.map((ele: HelpDeskType) => (
           <HelpDeskCard key={ele?.id} ele={ele} />
         ))}
       </div>
