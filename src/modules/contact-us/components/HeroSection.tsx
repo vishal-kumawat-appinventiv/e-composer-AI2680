@@ -15,7 +15,7 @@ const HeroSection = () => {
         <img
           src={CONTACT_US_IMG_1}
           alt="contact-us-img"
-          className="w-full h-full object-cover min-h-[60vh]"
+          className="w-full h-full object-cover min-h-[60vh] blur-sm"
         />
         <TopHeading />
         <div
