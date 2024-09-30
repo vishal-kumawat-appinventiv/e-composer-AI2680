@@ -1,32 +1,56 @@
-import { useContext } from "react";
+import { useContext, useMemo } from "react";
 import { BlogContext } from "../context/BlogContext";
 import { BlogType } from "../utils/mock";
 
 const useFetchBlogData = () => {
   const { blogs } = useContext(BlogContext);
 
-  const FashionBlogsData = blogs.filter(
-    (ele: BlogType) => ele?.display === "Fashion" && ele?.banner === false
+  const FashionBlogsData = useMemo(
+    () =>
+      blogs.filter(
+        (ele: BlogType) => ele?.display === "Fashion" && ele?.banner === false
+      ),
+    [blogs]
   );
 
-  const FashionBannerData = blogs.filter(
-    (ele: BlogType) => ele?.display === "Fashion" && ele?.banner === true
+  const FashionBannerData = useMemo(
+    () =>
+      blogs.filter(
+        (ele: BlogType) => ele?.display === "Fashion" && ele?.banner === true
+      ),
+    [blogs]
   );
 
-  const LifeStyleBlogsData = blogs.filter(
-    (ele: BlogType) => ele?.display === "Lifestyle" && ele?.banner === false
+  const LifeStyleBlogsData = useMemo(
+    () =>
+      blogs.filter(
+        (ele: BlogType) => ele?.display === "Lifestyle" && ele?.banner === false
+      ),
+    [blogs]
   );
 
-  const LifeStyleBlogsBanner = blogs.filter(
-    (ele: BlogType) => ele?.display === "Lifestyle" && ele?.banner === true
+  const LifeStyleBlogsBanner = useMemo(
+    () =>
+      blogs.filter(
+        (ele: BlogType) => ele?.display === "Lifestyle" && ele?.banner === true
+      ),
+    [blogs]
   );
 
-  const SpotlightBlogsData = blogs.filter(
-    (ele: BlogType) => ele?.display === "Spotlight" && ele?.banner === false
+  const SpotlightBlogsData = useMemo(
+    () =>
+      blogs.filter(
+        (ele: BlogType) => ele?.display === "Spotlight" && ele?.banner === false
+      ),
+    [blogs]
   );
 
-  const SpotlightBannerData = blogs.filter(
-    (ele: BlogType) => ele?.display === "Spotlight" && ele?.banner === true
+  const SpotlightBannerData = useMemo(
+    () =>
+      blogs.filter(
+        (ele: BlogType) => ele?.display === "Spotlight" && ele?.banner === true
+      ),
+    [blogs]
   );
 
   return {
