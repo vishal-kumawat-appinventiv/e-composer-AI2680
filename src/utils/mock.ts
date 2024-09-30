@@ -29,14 +29,6 @@ export const LOGO_IMG =
 
 export const FASHION_IMG_1 =
   "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/img-icon-bl.png?v=1683620903";
-export const FASHION_IMG_2 =
-  "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-4_720x.png?v=1683621391";
-export const FASHION_IMG_3 =
-  "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-3_720x.png?v=1683621366";
-export const FASHION_IMG_4 =
-  "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-2_720x.png?v=1683621336";
-export const FASHION_IMG_5 =
-  "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-1_720x.png?v=1683621301";
 
 export const LIFE_STYLE_IMG_1 =
   "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/img-icon-bl2.png?v=1683624622";
@@ -58,6 +50,63 @@ export const MIDDLE_CARDS_IMG_3 =
 
 export const CONTACT_US_IMG_1 =
   "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-2RgmJOxbvBbg-hr-search.png?v=1724402439";
+
+export type DisplayType = "Fashion" | "Lifestyle" | "Spotlight";
+export type TagType = "DESIGN" | "LIFESTYLE" | "FASHION";
+
+export interface BlogType {
+  id: number;
+  img: string;
+  date: string;
+  title: string;
+  desc: string;
+  tag: TagType[];
+  display: DisplayType;
+  banner: boolean;
+}
+
+export const BLOGS: BlogType[] = [
+  {
+    id: 1,
+    img: "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-4_720x.png?v=1683621391",
+    date: "By Admin Dinh / in May 9, 2023",
+    title: "Here's why you should try mood",
+    desc: "But they weren't the only ones to lean into the high octane trend, with MoschinoCersace and Jil Sander plumping for bold prints...",
+    tag: ["DESIGN", "FASHION"],
+    display: "Fashion",
+    banner: true,
+  },
+  {
+    id: 2,
+    img: "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-3_720x.png?v=1683621366",
+    date: "By Admin Dinh / in May 9, 2023",
+    title: "Your Guide to Fashion Forward Living",
+    desc: "Cersace and Jil Sander plumping for bold prints, from colourful stripes to...",
+    tag: ["DESIGN", "FASHION"],
+    display: "Fashion",
+    banner: false,
+  },
+  {
+    id: 3,
+    img: "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-2_720x.png?v=1683621336",
+    date: "By Admin Dinh / in May 9, 2023",
+    title: "Where Style and Creativity Collide",
+    desc: "Cersace and Jil Sander plumping for bold prints, from colourful stripes to...",
+    tag: ["DESIGN"],
+    display: "Fashion",
+    banner: false,
+  },
+  {
+    id: 4,
+    img: "https://cdn.shopify.com/s/files/1/0726/1221/7115/articles/img-bl-1_720x.png?v=1683621301",
+    date: "By Admin Dinh / in May 9, 2023",
+    title: "Unveiling the Latest Fashion Trends",
+    desc: "Cersace and Jil Sander plumping for bold prints, from colourful stripes to...",
+    tag: ["DESIGN", "FASHION"],
+    display: "Fashion",
+    banner: false,
+  },
+];
 
 export interface SpotlightDataType {
   img: string;
