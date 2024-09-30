@@ -6,7 +6,7 @@ interface SpotlightCardsProps {
 
 const SpotlightCards: React.FC<SpotlightCardsProps> = ({ data }) => {
   return (
-    <div className="max-w-7xl mx-auto px-4 mt-20">
+    <div className="max-w-7xl mx-auto mt-16">
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-4 w-full">
         {data.map((ele) => (
           <div

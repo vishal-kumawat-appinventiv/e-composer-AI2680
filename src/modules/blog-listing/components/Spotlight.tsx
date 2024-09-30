@@ -11,8 +11,6 @@ const Spotlight = () => {
     (ele: BlogType) => ele?.display === "Spotlight" && ele?.banner === true
   );
 
-  console.log(SpotlightBlogsData);
-
   return (
     <div className="max-w-7xl mx-auto px-4 mt-20 relative">
       <div className="relative bg-[#f4f4f4] w-[85%] mx-auto text-center py-24 rounded-r-full rounded-l-full">
