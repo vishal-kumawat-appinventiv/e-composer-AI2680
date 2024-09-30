@@ -18,18 +18,18 @@ const Spotlight = () => {
         />
       </div>
 
-      <BottomBox data={SPOTLIGHT_DATA} />
+      <SpotlightBanner data={SPOTLIGHT_DATA} />
     </div>
   );
 };
 
 export default Spotlight;
 
-interface BottomBoxProps {
+interface SpotlightBannerProps {
   data: SpotlightDataType;
 }
 
-const BottomBox: React.FC<BottomBoxProps> = ({ data }) => {
+const SpotlightBanner: React.FC<SpotlightBannerProps> = ({ data }) => {
   return (
     <div className="bottomCard flex flex-col gap-3 items-center justify-center max-w-4xl mx-auto bg-white mt-[-10px] lg:mt-[-100px] z-20 relative rounded-xl p-8">
       <p className="text-sm font-bold">{data.date}</p>

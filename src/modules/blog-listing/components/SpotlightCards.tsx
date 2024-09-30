@@ -4,7 +4,7 @@ import {
   MIDDLE_CARDS_IMG_3,
 } from "../../../utils/mock";
 
-const MiddleCards = () => {
+const SpotlightCards = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 mt-20">
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-4 w-full">
@@ -16,7 +16,7 @@ const MiddleCards = () => {
   );
 };
 
-export default MiddleCards;
+export default SpotlightCards;
 
 const Card1 = () => {
   return (
