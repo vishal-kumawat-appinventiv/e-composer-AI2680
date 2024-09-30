@@ -1,4 +1,5 @@
 import { BlogType } from "../../../types/type";
+import DescCard from "./DescCard";
 
 interface SpotlightCardsProps {
   data: BlogType[];
@@ -20,24 +21,7 @@ const SpotlightCards: React.FC<SpotlightCardsProps> = ({ data }) => {
               alt="fashion-img"
               className="w-full h-full object-cover rounded-xl"
             />
-            <div className="flex items-center justify-between w-full">
-              <p className="text-sm font-bold">{ele.date}</p>
-              <i className="bi bi-arrow-up-right text-black hover:text-red-500 cursor-pointer"></i>
-            </div>
-            <h4 className="text-black text-xl hover:text-red-500 cursor-pointer">
-              {ele.title}
-            </h4>
-            <p className="text-gray-500 text-sm box-border">{ele.desc}</p>
-            <div className="flex gap-4 items-center w-full">
-              {ele?.tag.map((t, index) => (
-                <button
-                  key={index}
-                  className="bg-[#edf1f8] text-black rounded-l-full rounded-r-full text-sm p-1 px-2"
-                >
-                  {t}
-                </button>
-              ))}
-            </div>
+            <DescCard data={ele} />
           </div>
         ))}
       </section>
