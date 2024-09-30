@@ -3,6 +3,8 @@ import { FAQS } from "../../../utils/mock";
 import { ContactContext } from "../../../context/ContactContext";
 import { FaqType } from "../../../types/type";
 
+// Popular Asked Questions for Contact Us Page
+// Fetch the faq data from context and render the component
 const PopularAskedQuestions: React.FC = () => {
   const { faq } = useContext(ContactContext);
 
@@ -31,6 +33,7 @@ interface Props {
   index: number;
 }
 
+// Question Box for Popular Asked Questions
 const QuestionBox: React.FC<Props> = ({ faq, index }) => {
   const [open, setOpen] = useState<number | null>(null);
 

@@ -2,18 +2,24 @@ import { useNavigate } from "react-router-dom";
 import { LOGO_IMG } from "../utils/mock";
 import NavSelect from "./NavSelect";
 
+// Navbar for all pages
+// Role - Renders the navigation bar
+// Static data
 const Navbar = () => {
   const navigate = useNavigate();
 
   return (
     <section className="sticky top-0 z-50 flex items-center justify-between w-full p-3 bg-[#f1f1f1] border border-b">
+      {/* Mobile Navbar */}
       <div className="w-full flex items-center justify-between lg:hidden">
         <div className="flex gap-2">
           <img src={LOGO_IMG} alt="logo" className="object-cover w-8 h-8" />
           <h1 className="text-2xl font-bold">EComposer</h1>
         </div>
+        {/* Nav Select - Drowdown to naviagte to other pages */}
         <NavSelect />
       </div>
+      {/* Desktop Navbar */}
       <div
         className="hidden lg:flex items-center gap-2 cursor-pointer"
         onClick={() => navigate("/")}

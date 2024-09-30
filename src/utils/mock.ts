@@ -12,6 +12,7 @@ import {
   RoutesType,
 } from "../types/type";
 
+// Routes to Navigate
 export const ROUTES: RoutesType[] = [
   {
     path: "/",
@@ -30,6 +31,7 @@ export const ROUTES: RoutesType[] = [
   },
 ];
 
+// BlogListing - Full Blogs Data to Render
 export const BLOGS: BlogType[] = [
   {
     id: 1,
@@ -153,6 +155,7 @@ export const BLOGS: BlogType[] = [
   },
 ];
 
+// Contact Us - Help Desk Data
 export const HELP_DESK: HelpDeskType[] = [
   {
     id: 1,
@@ -192,6 +195,7 @@ export const HELP_DESK: HelpDeskType[] = [
   },
 ];
 
+// Contact US - Popular Searched Questions
 export const FAQS: FaqType[] = [
   {
     q: "How do I join the affiliate program?",
@@ -211,6 +215,7 @@ export const FAQS: FaqType[] = [
   },
 ];
 
+// Contact Us - Any other questions
 export const OTHER_QUESTIONS: OtherQuestionsType[] = [
   {
     img: "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-YGrRM9IVGXicon-lc-1.png?v=1724638892",
@@ -234,6 +239,7 @@ export const OTHER_QUESTIONS: OtherQuestionsType[] = [
   },
 ];
 
+// Contact Us - Links for Footer
 export const FOOTER_LINKS: FooterLinkType[] = [
   {
     title: "About Us",
@@ -272,6 +278,7 @@ export const FOOTER_LINKS: FooterLinkType[] = [
   },
 ];
 
+// Contact Us - Hero Cards
 export const CONTACT_US_HERO_CARDS: ContactUsHeroCardType[] = [
   {
     id: 1,
@@ -291,6 +298,7 @@ export const CONTACT_US_HERO_CARDS: ContactUsHeroCardType[] = [
   },
 ];
 
+// Contact Us - Footer Details
 export const CONTACT_US_FOOTER_COMPANY: ContactUsFooterCompanyType[] = [
   {
     img: "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-4V9nWEPuPOlogo-hc-1.png?v=1724641994",
@@ -300,6 +308,7 @@ export const CONTACT_US_FOOTER_COMPANY: ContactUsFooterCompanyType[] = [
   },
 ];
 
+// Static Images
 export const HERO_IMG_1 =
   "https://cdn.shopify.com/s/files/1/0726/1221/7115/files/bn-bl-1.png?v=1683616783";
 export const HERO_IMG_2 =

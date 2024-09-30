@@ -12,9 +12,13 @@ const defaultContextValue: BlogContextType = {
   setBlogs: () => {},
 };
 
+// Context Provider for Blog Context
+// Takes children as props
+// Returns the context value with the blogs data
 export const BlogContext = createContext<BlogContextType>(defaultContextValue);
 
 export const BlogProvider = ({ children }: { children: ReactNode }) => {
+  // for now as the data is static, we are using the mock data
   const [blogs, setBlogs] = useState<BlogType[]>(BLOGS);
 
   return (

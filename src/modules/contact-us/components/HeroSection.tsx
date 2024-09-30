@@ -4,6 +4,8 @@ import SearchBar from "./SearchBar";
 import TopHeading from "./TopHeading";
 import { useAnnimation } from "../../../hooks/useAnnimation";
 
+// Hero Section for Contact Us Page
+// Return the components with animation from useAnnimation hook
 const HeroSection = () => {
   const annimation = useAnnimation(2, [100]);
 

@@ -1,6 +1,9 @@
 import { HERO_IMG_1, HERO_IMG_2, LOGO_IMG } from "../../../utils/mock";
 import { useAnnimation } from "../../../hooks/useAnnimation";
 
+// Hero Section for Blog Listing Page
+// Return the components with animation from useAnnimation hook
+// Static data
 const HeroSection = () => {
   const annimation = useAnnimation(3, [500, 1000]);
   return (
@@ -20,6 +23,9 @@ const HeroSection = () => {
 
 export default HeroSection;
 
+// Left column for Hero Section
+// Takes animation as props
+// Static data
 const Col1 = ({ annimation }: { annimation: Record<number, boolean> }) => {
   return (
     <div className="relative col1 min-h-[50vh] lg:max-h-[90vh] rounded-xl overflow-hidden">
@@ -51,6 +57,9 @@ const Col1 = ({ annimation }: { annimation: Record<number, boolean> }) => {
   );
 };
 
+// Right column for Hero Section
+// Takes animation as props
+// Static data
 const Element1 = ({ annimation }: { annimation: Record<number, boolean> }) => {
   return (
     <div
@@ -76,6 +85,9 @@ const Element1 = ({ annimation }: { annimation: Record<number, boolean> }) => {
   );
 };
 
+// Right column for Hero Section
+// Takes animation as props
+// Static data
 const Element2 = ({ annimation }: { annimation: Record<number, boolean> }) => {
   return (
     <div

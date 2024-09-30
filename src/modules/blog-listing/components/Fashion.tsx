@@ -3,6 +3,8 @@ import BlogBannerCard from "./BlogBannerCard";
 import BlogCard from "./BlogCard";
 import useFetchBlogData from "../../../hooks/useFetchBlogData";
 
+// Fashion Section for Blog Listing Page
+// Fetch the data from useFetchBlogData hook and render the component
 const Fashion = () => {
   const { FashionBlogsData, FashionBannerData } = useFetchBlogData();
 
@@ -19,8 +21,10 @@ const Fashion = () => {
         <h1 className="text-3xl lg:text-5xl text-black">Fashion</h1>
       </div>
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full">
+        {/* Banner Card */}
         <BlogBannerCard data={FashionBannerData[0]} />
         <div className="col2 flex flex-col gap-3 h-full w-full overflow-hidden">
+          {/* Blog Cards */}
           {FashionBlogsData.map((ele) => (
             <BlogCard key={ele?.id} data={ele} />
           ))}

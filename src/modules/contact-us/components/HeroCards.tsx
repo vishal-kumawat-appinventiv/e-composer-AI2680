@@ -1,6 +1,8 @@
 import { ContactUsHeroCardType } from "../../../types/type";
 import { CONTACT_US_HERO_CARDS } from "../../../utils/mock";
 
+// Hero cards for Contact Us Page
+// Static data
 const HeroCards = () => {
   return (
     <section className="grid grid-cols-1 lg:grid-cols-2 gap-5 w-full px-4">
@@ -17,6 +19,8 @@ interface CardProps {
   ele: ContactUsHeroCardType;
 }
 
+// Each card for hero cards
+// Takes element as props
 const Card: React.FC<CardProps> = ({ ele }) => {
   return (
     <div className="bg-white flex flex-col p-4 juele?.stify-center items-center gap-3 h-full w-full overflow-hidden rounded-xl border-2">

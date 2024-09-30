@@ -5,6 +5,8 @@ interface SpotlightBannerProps {
   data: BlogType;
 }
 
+// Spotlight Banner for Blog Listing Page
+// Takes data:BlogType as props
 const SpotlightBanner: React.FC<SpotlightBannerProps> = ({ data }) => {
   return (
     <>

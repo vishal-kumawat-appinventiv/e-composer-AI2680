@@ -9,7 +9,9 @@ import { BlogProvider } from "../../context/BlogContext";
 
 const BlogListing = () => {
   return (
+    // Catches errors in any component below and renders error fallback UI
     <ErrorBoundary fallback={<ErroFallbackUi />}>
+      {/* Context Provider for Blog Context */}
       <BlogProvider>
         <HeroSection />
         <NewsLetter />

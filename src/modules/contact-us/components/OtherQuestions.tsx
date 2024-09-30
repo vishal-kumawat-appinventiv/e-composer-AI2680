@@ -2,6 +2,8 @@ import React from "react";
 import { OTHER_QUESTIONS } from "../../../utils/mock";
 import { OtherQuestionsType } from "../../../types/type";
 
+// Other Questions for Contact Us Page
+// static data
 const OtherQuestions: React.FC = () => {
   return (
     <section className="max-w-7xl mx-auto px-4 mt-10 mb-32">
@@ -17,6 +19,7 @@ const OtherQuestions: React.FC = () => {
 
 export default OtherQuestions;
 
+// Heading for Other Questions
 const Heading: React.FC = () => {
   return (
     <div className="flex flex-col gap-3 items-center justify-center w-full mb-10">
@@ -34,6 +37,8 @@ interface OuestionCardProps {
   index: number;
 }
 
+// Each Question Card for Other Questions Component
+// takes element and index as props
 const OuestionCard: React.FC<OuestionCardProps> = ({ ele, index }) => {
   return (
     <div

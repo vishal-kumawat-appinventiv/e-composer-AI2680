@@ -2,6 +2,8 @@ import { useContext } from "react";
 import { ContactContext } from "../../../context/ContactContext";
 import { HelpDeskType } from "../../../types/type";
 
+// Help Desk for Contact Us Page
+// Fetch the faq data from ContactContext and render the component
 const HelpDesk: React.FC = () => {
   const { helpDesk } = useContext(ContactContext);
 
@@ -23,6 +25,8 @@ const HelpDesk: React.FC = () => {
 
 export default HelpDesk;
 
+// Each Help Desk Card for Help Desk Component
+// Takes element as props
 const HelpDeskCard = ({ ele }: { ele: HelpDeskType }) => {
   return (
     <div className="bg-[#f4f4ff] p-8 rounded-xl flex flex-col gap-3">

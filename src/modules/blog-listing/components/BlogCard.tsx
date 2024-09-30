@@ -1,6 +1,8 @@
 import React from "react";
 import { BlogType } from "../../../types/type";
 
+// BlogCard for Blog Listing Page
+// Takes BlogType as props
 const BlogCard = ({ data }: { data: BlogType }) => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-[34%_63%] gap-4 w-full">

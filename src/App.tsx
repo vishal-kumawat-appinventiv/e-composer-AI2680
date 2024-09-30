@@ -5,12 +5,14 @@ import PrivateRoute from "./routes/private-route";
 import PublicRoute from "./routes/public-route";
 
 const App = () => {
-  const isUser = true; // assuming user is logged in
+  // Assuming user is logged in (comming from auth)
+  const isUser = true;
 
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
+        {/* Routing via HOC */}
         {ROUTES.map((route, index) =>
           route.isPrivate ? (
             <Route

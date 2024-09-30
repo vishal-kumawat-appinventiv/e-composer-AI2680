@@ -1,3 +1,6 @@
+// Error Fallback UI for Error Boundary (react-error-boundary)
+// Role - Renders a fallback UI when an error occurs
+// Renders a simple error message with a reload button
 const ErroFallbackUi = () => {
   return (
     <div className="flex flex-col items-center justify-center h-[94vh] bg-gray-100">

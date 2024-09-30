@@ -16,10 +16,14 @@ const defaultContextValue: ContactContextType = {
   setFaq: () => {},
 };
 
+// Context Provider for Contact Context
+// Takes children as props
+// Returns the context value with the helpDesk and faq data
 export const ContactContext =
   createContext<ContactContextType>(defaultContextValue);
 
 export const ContactProvider = ({ children }: { children: ReactNode }) => {
+  // for now as the data is static, we are using the mock data
   const [helpDesk, setHelpDesk] = useState<HelpDeskType[]>(HELP_DESK);
   const [faq, setFaq] = useState<FaqType[]>(FAQS);
 

@@ -3,6 +3,8 @@ import { LIFE_STYLE_IMG_1 } from "../../../utils/mock";
 import BlogBannerCard from "./BlogBannerCard";
 import BlogCard from "./BlogCard";
 
+// Life Style Section for Blog Listing Page
+// Fetch the data from useFetchBlogData hook and render the component
 const LifeStyle = () => {
   const { LifeStyleBlogsData, LifeStyleBlogsBanner } = useFetchBlogData();
 
@@ -19,8 +21,10 @@ const LifeStyle = () => {
         <h1 className="text-3xl lg:text-5xl text-black">Lifestyle</h1>
       </div>
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full">
+        {/* Banner Card */}
         <BlogBannerCard data={LifeStyleBlogsBanner[0]} />
         <div className="col2 flex flex-col gap-3 h-full w-full overflow-hidden">
+          {/* Blog Cards */}
           {LifeStyleBlogsData.map((ele) => (
             <BlogCard key={ele?.id} data={ele} />
           ))}

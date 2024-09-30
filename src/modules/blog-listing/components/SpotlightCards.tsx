@@ -4,6 +4,8 @@ interface SpotlightCardsProps {
   data: BlogType[];
 }
 
+// Spotlight Cards for Blog Listing Page
+// Takes data:BlogType[] as props
 const SpotlightCards: React.FC<SpotlightCardsProps> = ({ data }) => {
   return (
     <div className="max-w-7xl mx-auto mt-16">

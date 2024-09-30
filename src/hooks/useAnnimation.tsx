@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react";
 
+// Custom Hook to animate the components
+// Role - Trigger the animation on the component
+// Takes numberOfAnimations as an optional parameter with default value of 1
+// Takes duration as a arry of numbers run in sequence
+// Returns an object with the animation state
 export function useAnnimation(
   numberOfAnimations: number = 1,
   duration: number[]

@@ -5,6 +5,7 @@ interface Props {
   isUser: boolean;
 }
 
+// If user is logged in and on auth route, redirect to home ,else render children
 const PublicRoute: React.FC<Props> = ({ children, isUser }) => {
   const isOnAuthRoute =
     window.location.pathname === "/login" ||

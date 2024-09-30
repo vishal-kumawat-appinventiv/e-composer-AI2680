@@ -2,6 +2,11 @@ import { useContext, useMemo } from "react";
 import { BlogContext } from "../context/BlogContext";
 import { BlogType } from "../types/type";
 
+// Custom Hook to fetch the data from BlogContext
+// Filters the data based on the display type
+// Used useMemo to memoize the data to avoid unnecessary re-renders
+// Reduces the code complexity and improves performance
+// Returns the filtered data
 const useFetchBlogData = () => {
   const { blogs } = useContext(BlogContext);
 

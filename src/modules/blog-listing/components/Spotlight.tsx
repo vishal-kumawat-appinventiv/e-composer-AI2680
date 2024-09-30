@@ -2,6 +2,8 @@ import SpotlightBanner from "./SpotlightBanner";
 import SpotlightCards from "./SpotlightCards";
 import useFetchBlogData from "../../../hooks/useFetchBlogData";
 
+// Spotlight Section for Blog Listing Page
+// Fetch the data from useFetchBlogData hook and render the component
 const Spotlight = () => {
   const { SpotlightBannerData, SpotlightBlogsData } = useFetchBlogData();
 

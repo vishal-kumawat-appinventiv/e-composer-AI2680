@@ -9,7 +9,9 @@ import { ContactProvider } from "../../context/ContactContext";
 
 const ContactUs = () => {
   return (
+    // Catches errors in any component below and renders error fallback UI
     <ErrorBoundary fallback={<ErroFallbackUi />}>
+      {/* Context Provider for Contact Context */}
       <ContactProvider>
         <HeroSection />
         <HelpDesk />

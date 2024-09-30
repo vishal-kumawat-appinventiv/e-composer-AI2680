@@ -5,6 +5,8 @@ import {
   FOOTER_LINKS,
 } from "../../../utils/mock";
 
+// Footer for Contact Us Page
+// Static data
 const Footer: React.FC = () => {
   return (
     <section className="w-full lg:max-w-[75%] lg:mx-auto px-4 mt-10 mb-5">
@@ -36,6 +38,8 @@ const Footer: React.FC = () => {
 
 export default Footer;
 
+// Sign Up for Contact Us Page
+// Static data
 const SignUp: React.FC = () => {
   return (
     <div className="flex items-center justify-between border border-black p-1 flex-wrap">
@@ -56,6 +60,8 @@ const SignUp: React.FC = () => {
   );
 };
 
+// Bootom Footer for Contact Us Page
+// Takes image as props
 const BootomFooter = ({ img }: { img: string }) => {
   return (
     <div className="lg:flex gap-2 items-center justify-between w-full border-t pt-2">
@@ -75,6 +81,8 @@ const BootomFooter = ({ img }: { img: string }) => {
   );
 };
 
+// Company Details for Contact Us Page
+// Takes data as props
 const CompanyDetails = ({ data }: { data: ContactUsFooterCompanyType }) => {
   return (
     <>

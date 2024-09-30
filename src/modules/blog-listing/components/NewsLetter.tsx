@@ -1,3 +1,5 @@
+// News Letter for Blog Listing Page
+// Static data
 const NewsLetter = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 mt-20">
@@ -14,6 +16,8 @@ const NewsLetter = () => {
 
 export default NewsLetter;
 
+// Subscribe Input for News Letter
+// Static data
 const SubscribeInput = () => {
   return (
     <div className="border rounded flex items-center gap-2 px-2 py-1 justify-between w-full sm:w-auto mt-4 sm:mt-0">
@@ -31,6 +35,8 @@ const SubscribeInput = () => {
   );
 };
 
+// Middle Text for News Letter
+// Static data
 const MiddleText = () => {
   return (
     <div className="flex flex-col gap-2 text-center sm:text-left">

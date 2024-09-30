@@ -1,3 +1,5 @@
+// Top Heading for Contact Us Page (Hero Section)
+// Static data
 const TopHeading: React.FC = () => {
   return (
     <div className="absolute top-10 lg:top-36 left-1/2 transform -translate-x-1/2 text-center">
