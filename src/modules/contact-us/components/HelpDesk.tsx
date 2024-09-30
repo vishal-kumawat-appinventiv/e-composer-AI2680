@@ -25,9 +25,13 @@ const HelpDesk: React.FC = () => {
 
 export default HelpDesk;
 
+interface HelpDeskProps {
+  ele: HelpDeskType;
+}
+
 // Each Help Desk Card for Help Desk Component
 // Takes element as props
-const HelpDeskCard = ({ ele }: { ele: HelpDeskType }) => {
+const HelpDeskCard: React.FC<HelpDeskProps> = ({ ele }) => {
   return (
     <div className="bg-[#f4f4ff] p-8 rounded-xl flex flex-col gap-3">
       <img

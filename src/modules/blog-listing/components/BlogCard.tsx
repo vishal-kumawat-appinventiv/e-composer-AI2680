@@ -1,9 +1,13 @@
 import React from "react";
 import { BlogType } from "../../../types/type";
 
+interface BlogCardProps {
+  data: BlogType;
+}
+
 // BlogCard for Blog Listing Page
 // Takes BlogType as props
-const BlogCard = ({ data }: { data: BlogType }) => {
+const BlogCard: React.FC<BlogCardProps> = ({ data }) => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-[34%_63%] gap-4 w-full">
       <img

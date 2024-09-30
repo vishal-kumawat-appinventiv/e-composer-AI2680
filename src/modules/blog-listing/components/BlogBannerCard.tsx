@@ -1,9 +1,13 @@
 import React from "react";
 import { BlogType } from "../../../types/type";
 
+interface BlogBannerProps {
+  data: BlogType;
+}
+
 // Blog Banner Card for Blog Listing Page
 // Takes BlogType as props
-const BlogBannerCard = ({ data }: { data: BlogType }) => {
+const BlogBannerCard: React.FC<BlogBannerProps> = ({ data }) => {
   return (
     <div className="col1 flex flex-col gap-3 h-full w-full overflow-hidden">
       <img

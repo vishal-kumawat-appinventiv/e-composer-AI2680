@@ -60,9 +60,13 @@ const SignUp: React.FC = () => {
   );
 };
 
+interface BootomFooterProps {
+  img: string;
+}
+
 // Bootom Footer for Contact Us Page
 // Takes image as props
-const BootomFooter = ({ img }: { img: string }) => {
+const BootomFooter: React.FC<BootomFooterProps> = ({ img }) => {
   return (
     <div className="lg:flex gap-2 items-center justify-between w-full border-t pt-2">
       <div>
@@ -81,9 +85,13 @@ const BootomFooter = ({ img }: { img: string }) => {
   );
 };
 
+interface CompanyDetailsProps {
+  data: ContactUsFooterCompanyType;
+}
+
 // Company Details for Contact Us Page
 // Takes data as props
-const CompanyDetails = ({ data }: { data: ContactUsFooterCompanyType }) => {
+const CompanyDetails: React.FC<CompanyDetailsProps> = ({ data }) => {
   return (
     <>
       <img

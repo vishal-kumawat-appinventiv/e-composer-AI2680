@@ -23,10 +23,14 @@ const HeroSection = () => {
 
 export default HeroSection;
 
+interface HeroProps {
+  annimation: Record<number, boolean>;
+}
+
 // Left column for Hero Section
 // Takes animation as props
 // Static data
-const Col1 = ({ annimation }: { annimation: Record<number, boolean> }) => {
+const Col1: React.FC<HeroProps> = ({ annimation }) => {
   return (
     <div className="relative col1 min-h-[50vh] lg:max-h-[90vh] rounded-xl overflow-hidden">
       <img
@@ -60,7 +64,7 @@ const Col1 = ({ annimation }: { annimation: Record<number, boolean> }) => {
 // Right column for Hero Section
 // Takes animation as props
 // Static data
-const Element1 = ({ annimation }: { annimation: Record<number, boolean> }) => {
+const Element1: React.FC<HeroProps> = ({ annimation }) => {
   return (
     <div
       className={`relative bg-[#bde48a] flex-grow h-[35vh] lg:h-[30%] w-full rounded-xl transition-transform duration-700 ease-in-out ${
@@ -88,7 +92,7 @@ const Element1 = ({ annimation }: { annimation: Record<number, boolean> }) => {
 // Right column for Hero Section
 // Takes animation as props
 // Static data
-const Element2 = ({ annimation }: { annimation: Record<number, boolean> }) => {
+const Element2: React.FC<HeroProps> = ({ annimation }) => {
   return (
     <div
       className={`relative flex-grow h-[35vh] lg:h-[70%] rounded-xl overflow-hidden transition-transform duration-700 ease-in-out
