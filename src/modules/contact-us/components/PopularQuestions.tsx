@@ -52,7 +52,7 @@ const QuestionBox: React.FC<Props> = ({ faq, index }) => {
         <p className="text-lg lg:text-2xl text-gray-600 cursor-pointer hover:text-black">
           {faq.q}
         </p>
-        <button className="border border-gray-400 rounded-full p-1 lg:p-2 px-2 lg:px-3 hover:bg-purple-200 hover:text-black transition-colors duration-500 hover:border-transparent">
+        <button className="border border-gray-400 rounded-full p-1 lg:p-2 px-2 lg:px-3 hover:bg-purple-200 hover:text-black transition-colors duration-300 hover:border-transparent">
           {open === index ? (
             <i className="bi bi-chevron-up"></i>
           ) : (
@@ -61,7 +61,7 @@ const QuestionBox: React.FC<Props> = ({ faq, index }) => {
         </button>
       </div>
       <div
-        className={`overflow-hidden transition-all duration-400 ${
+        className={`overflow-hidden transition-all duration-500 ${
           open === index ? "max-h-52" : "max-h-0"
         }`}
       >
