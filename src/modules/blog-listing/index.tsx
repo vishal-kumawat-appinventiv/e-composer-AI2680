@@ -5,15 +5,18 @@ import NewsLetter from "./components/NewsLetter";
 import Spotlight from "./components/Spotlight";
 import { ErrorBoundary } from "react-error-boundary";
 import ErroFallbackUi from "../../components/ErroFallbackUi";
+import { BlogProvider } from "../../context/BlogContext";
 
 const BlogListing = () => {
   return (
     <ErrorBoundary fallback={<ErroFallbackUi />}>
-      <HeroSection />
-      <NewsLetter />
-      <Fashion />
-      <Spotlight />
-      <LifeStyle />
+      <BlogProvider>
+        <HeroSection />
+        <NewsLetter />
+        <Fashion />
+        <Spotlight />
+        <LifeStyle />
+      </BlogProvider>
     </ErrorBoundary>
   );
 };
