@@ -10,7 +10,12 @@ const OtherQuestions: React.FC = () => {
       <Heading />
       <div className="border rounded-xl grid grid-cols-2 lg:grid-cols-4 gap-4 w-full p-4 mt-20">
         {OTHER_QUESTIONS.map((ele, index: number) => (
-          <OuestionCard key={index} ele={ele} index={index} />
+          <OuestionCard
+            key={index}
+            ele={ele}
+            borderStatus={index % 2 === 0}
+            index={index}
+          />
         ))}
       </div>
     </section>
@@ -34,17 +39,22 @@ const Heading: React.FC = () => {
 
 interface OuestionCardProps {
   ele: OtherQuestionsType;
+  borderStatus: boolean;
   index: number;
 }
 
 // Each Question Card for Other Questions Component
 // takes element and index as props
-const OuestionCard: React.FC<OuestionCardProps> = ({ ele, index }) => {
+const OuestionCard: React.FC<OuestionCardProps> = ({
+  ele,
+  borderStatus,
+  index,
+}) => {
   return (
     <div
-      className={`flex flex-col gap-3 items-center justify-center w-full ${
-        OTHER_QUESTIONS.length - 1 !== index ? "border-r-2" : ""
-      }`}
+      className={`flex flex-col gap-3 items-center justify-center w-full 
+      ${borderStatus && "border-r-2"} ${index === 1 && "lg:border-r-2"}
+      `}
     >
       <img
         src={ele?.img}

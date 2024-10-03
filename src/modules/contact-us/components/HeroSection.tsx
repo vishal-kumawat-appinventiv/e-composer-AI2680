@@ -19,14 +19,14 @@ const HeroSection = () => {
         />
         <TopHeading />
         <div
-          className={`absolute top-40 lg:top-72 left-1/2 transform -translate-x-1/2 text-center w-full transition-transform duration-700 ease-in-out ${
+          className={`absolute top-40 lg:top-64 left-1/2 transform -translate-x-1/2 text-center w-full transition-transform duration-700 ease-in-out ${
             annimation[1] ? "translate-y-0" : "translate-y-full"
           }`}
         >
           <SearchBar />
         </div>
         <div
-          className={`absolute -bottom-[9.5rem] lg:bottom-20 left-1/2 transform -translate-x-1/2 text-center w-full lg:max-w-[40%] transition-transform duration-700 ease-in-out ${
+          className={`absolute -bottom-[9.5rem] lg:bottom-20 left-1/2 transform -translate-x-1/2 text-center w-full lg:max-w-[70%] xl:max-w-[48%] transition-transform duration-700 ease-in-out ${
             annimation[2] ? "translate-y-0" : "translate-y-full"
           }`}
         >

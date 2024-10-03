@@ -29,7 +29,7 @@ const SpotlightBanner: React.FC<SpotlightBannerProps> = ({ data }) => {
           {data.tag.map((tag, index) => (
             <button
               key={index}
-              className="bg-[#edf1f8] text-black rounded-l-full rounded-r-full text-sm p-1 px-2"
+              className="bg-[#edf1f8] text-black rounded-l-full rounded-r-full text-xs leading-4 p-1 px-2 font-medium"
             >
               {tag}
             </button>

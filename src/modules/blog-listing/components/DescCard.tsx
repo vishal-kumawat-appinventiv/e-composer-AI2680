@@ -23,7 +23,7 @@ const DescCard: React.FC<DescProps> = ({ data }) => {
         {data?.tag.map((t) => (
           <button
             key={t}
-            className="bg-[#edf1f8] text-black rounded-l-full rounded-r-full text-sm p-1 px-2"
+            className="bg-[#edf1f8] text-black rounded-l-full rounded-r-full text-xs leading-4 p-1 px-2 font-medium"
           >
             {t}
           </button>

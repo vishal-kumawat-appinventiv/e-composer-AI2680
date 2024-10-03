@@ -44,7 +44,7 @@ const Col1: React.FC<HeroProps> = ({ annimation }) => {
         }`}
       >
         <p className="text-white text-sm">FASHION</p>
-        <h1 className="text-white text-3xl lg:text-7xl max-w-[60%]">
+        <h1 className="text-white text-3xl lg:text-5xl max-w-[60%] font-medium">
           {"Here's what's new in your favourite stores & online this week..."}
         </h1>
         <div className="flex gap-3">
@@ -78,7 +78,7 @@ const Element1: React.FC<HeroProps> = ({ annimation }) => {
       </div>
       <div className="absolute bottom-5 left-5 z-10 flex flex-col gap-2 lg:gap-4 font-bold">
         <p className="text-black text-sm">DESIGN</p>
-        <h2 className="text-black text-xl lg:text-3xl">
+        <h2 className="text-black text-xl lg:text-2xl">
           Here's what's new in your favourite stores & online this week...
         </h2>
         <button className="text-left underline text-sm text-black">
@@ -105,7 +105,7 @@ const Element2: React.FC<HeroProps> = ({ annimation }) => {
       />
       <div className="absolute bottom-6 left-5 z-10 flex flex-col gap-2 lg:gap-4 font-bold">
         <p className="text-white text-sm">FEATURED CATEGORIES</p>
-        <h1 className="text-4xl lg:text-6xl font-normal text-white">
+        <h1 className="text-4xl lg:text-5xl font-normal text-white">
           Lifestyle
         </h1>
         <button className="text-left underline text-sm text-white">
